@@ -28,6 +28,8 @@ Route::get( '/home', [HomeController::class, 'index']);
 
 //Admin
 Route::get('/admin', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('adminhome');
+Route::get('/admin/login', [HomeController::class, 'login'])->name('adminlogin');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
