@@ -19,14 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_category.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="İndex.blade and home.blade changed and add other pieces.">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,11 +167,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lHhSPwV7huQDrm08hI4F2pf9si" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -196,8 +198,19 @@
       <updated>1607259922595</updated>
       <workItem from="1607259923751" duration="5158000" />
       <workItem from="1608381987641" duration="3494000" />
-      <workItem from="1608385525610" duration="8142000" />
+      <workItem from="1608385525610" duration="8692000" />
+      <workItem from="1608995359294" duration="3604000" />
+      <workItem from="1609001941664" duration="2087000" />
+      <workItem from="1609004272807" duration="869000" />
     </task>
+    <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
+      <created>1608394469228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608394469228</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +226,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="İndex.blade and home.blade changed and add other pieces." />
+    <option name="LAST_COMMIT_MESSAGE" value="İndex.blade and home.blade changed and add other pieces." />
   </component>
   <component name="WindowStateProjectService">
     <state x="511" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607260739874">
@@ -223,10 +242,34 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="518" y="187" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1608385522291" />
+    <state x="562" y="334" key="Github.CreateGistDialog" timestamp="1609002362843">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="562" y="334" key="Github.CreateGistDialog/0.0.1474.864@0.0.1474.864" timestamp="1609002362843" />
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1609004450626">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1609004450626" />
+    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1609004450626">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1609004450626" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1609004450626">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1609004450626" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1609004450626">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1609004450626" />
     <state x="573" y="355" key="NewPhpFileDialog" timestamp="1608391052386">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="573" y="355" key="NewPhpFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1608391052386" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609001823744">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609001823744" />
     <state x="394" y="199" key="run.anything.popup" timestamp="1608382712444">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

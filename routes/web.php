@@ -18,11 +18,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/',function(){
+Route::redirect('/anasayfa', '/home')->name('anasayfa');
+
+Route::get('/', function () {
     return view('home.index');
 });
 
-Route::get('/home',[HomeController::class,'index']);
+Route::get( '/home', [HomeController::class, 'index']);
+
+//Admin
+Route::get('/admin', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('adminhome');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
