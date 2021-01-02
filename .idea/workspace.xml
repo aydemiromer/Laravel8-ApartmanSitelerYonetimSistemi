@@ -19,208 +19,65 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/css/style-responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/css/table-responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/css/to-do.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/css/zabuto_calendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/blog-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/checkbox-gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/friends/fr-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/instagram.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/login-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/lorde.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/mask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/ny.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/portfolio/port01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/portfolio/port02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/portfolio/port03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/portfolio/port04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/portfolio/port05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/portfolio/port06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/product.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/product.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/profile-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/profile-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/radio-gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/ui-danro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/ui-divya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/ui-sam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/ui-sherman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/ui-zac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/weather.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/img/zoom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/bootstrap-switch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/calendar-conf-events.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/chart-master/Chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/chartjs-conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/common-scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/easy-pie-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/fancybox/jquery.fancybox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/fancybox/jquery.fancybox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/form-component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/fullcalendar/bootstrap-fullcalendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/fullcalendar/fullcalendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/gritter-conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/gritter/css/jquery.gritter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/gritter/css/jquery.gritter0.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/gritter/images/gritter-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/gritter/images/gritter-long.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/gritter/images/gritter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/gritter/images/ie-spacer.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/gritter/js/jquery.gritter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery-1.8.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery-easy-pie-chart/jquery.easy-pie-chart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery-easy-pie-chart/jquery.easy-pie-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery-ui-1.9.2.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery.backstretch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery.dcjqaccordion.2.7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery.nicescroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery.scrollTo.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery.sparkline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery.tagsinput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/jquery.ui.touch-punch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/morris-conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/sparkline-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/tasks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/js/zabuto_calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/lineicons/fonts/linecons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/lineicons/fonts/linecons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/lineicons/fonts/linecons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/lineicons/fonts/linecons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/lineicons/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/lineicons/lte-ie7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/assets/lineicons/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/login/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/css/style-responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/css/table-responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/css/to-do.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/css/zabuto_calendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/blog-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/checkbox-gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/friends/fr-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/instagram.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/login-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/lorde.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/mask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/ny.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/portfolio/port01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/portfolio/port02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/portfolio/port03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/portfolio/port04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/portfolio/port05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/portfolio/port06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/product.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/product.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/profile-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/profile-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/radio-gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/ui-danro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/ui-divya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/ui-sam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/ui-sherman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/ui-zac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/weather.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/zoom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/bootstrap-switch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/calendar-conf-events.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/chart-master/Chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/chartjs-conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/common-scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/easy-pie-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/fancybox/jquery.fancybox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/fancybox/jquery.fancybox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/form-component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/fullcalendar/bootstrap-fullcalendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/fullcalendar/fullcalendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/gritter-conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/gritter/css/jquery.gritter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/gritter/css/jquery.gritter0.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/gritter/images/gritter-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/gritter/images/gritter-long.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/gritter/images/gritter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/gritter/images/ie-spacer.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/gritter/js/jquery.gritter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery-1.8.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery-easy-pie-chart/jquery.easy-pie-chart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery-easy-pie-chart/jquery.easy-pie-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery-ui-1.9.2.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery.backstretch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery.dcjqaccordion.2.7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery.nicescroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery.scrollTo.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery.sparkline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery.tagsinput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/jquery.ui.touch-punch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/morris-conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/sparkline-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/tasks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/js/zabuto_calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/lineicons/fonts/linecons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/lineicons/fonts/linecons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/lineicons/fonts/linecons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/lineicons/fonts/linecons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/lineicons/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/lineicons/lte-ie7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/lineicons/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="admin panel created and login panel">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MenuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_27_104134_create_menus_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/css/main-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/img/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/bootstrap/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/bootstrap/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/bootstrap/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/dataTables/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/dataTables/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/dataTables/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/flot/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/flot/jquery.flot.tooltip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/metisMenu/jquery.metisMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/morris/morris-0.4.3.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/morris/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/morris/raphael-2.1.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/pace/pace-theme-big-counter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/pace/pace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/social-buttons/social-buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/plugins/timeline/timeline.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/scripts/dashboard-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/scripts/flot-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/scripts/morris-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/table/assets/scripts/siminta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/_blank.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/menu_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -372,11 +229,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\admin" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -398,7 +262,11 @@
       <workItem from="1608995359294" duration="3604000" />
       <workItem from="1609001941664" duration="2087000" />
       <workItem from="1609004272807" duration="3868000" />
-      <workItem from="1609008972395" duration="639000" />
+      <workItem from="1609008972395" duration="5566000" />
+      <workItem from="1609065403906" duration="12774000" />
+      <workItem from="1609493402527" duration="16756000" />
+      <workItem from="1609530125724" duration="1009000" />
+      <workItem from="1609586480422" duration="18864000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -414,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609005263166</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="admin panel created and login panel">
+      <created>1609009833916</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609009833916</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,9 +311,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="İndex.blade and home.blade changed and add other pieces." />
     <MESSAGE value="admin panel created" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin panel created" />
+    <MESSAGE value="admin panel created and login panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin panel created and login panel" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="364" y="110" key="#Inspections/0.0.1474.864@0.0.1474.864" timestamp="1609500377725" />
+    <state x="330" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609012833040">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="330" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" timestamp="1609012833040" />
     <state x="511" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607260739874">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -471,14 +355,22 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state width="1431" height="224" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1609008939744" />
-    <state x="573" y="355" key="NewPhpFileDialog" timestamp="1609009613137">
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1609089212929">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="573" y="355" key="NewPhpFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1609009613137" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609005412383">
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1474.864@0.0.1474.864" timestamp="1609089212929" />
+    <state x="518" y="155" key="NewPhpClassDialog" timestamp="1609496005000">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609005412383" />
+    <state x="518" y="155" key="NewPhpClassDialog/0.0.1474.864@0.0.1474.864" timestamp="1609496005000" />
+    <state x="573" y="355" key="NewPhpFileDialog" timestamp="1609085666332">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="573" y="355" key="NewPhpFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1609085666332" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609009876507">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609009876507" />
     <state x="555" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609006645900">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

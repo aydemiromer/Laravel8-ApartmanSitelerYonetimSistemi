@@ -6,14 +6,17 @@
                 <img src="{{asset('assets')}}/admin/assets/img/find_user.png" class="img-responsive" />
 
             </li>
+            <div class="info">
+                @auth
+                    <a href="#" class="d-block">{{Auth:: user()->name}}</a>
+
+                @endauth
+            </div>
 
 
             <li>
-                <a href="index.html"><i class="fa fa-desktop "></i>Dashboard</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-edit "></i>UI Elements<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
+                <a href="{{route('admin_menu')}}"><i class="fa fa-edit "></i>MENU<span class="fa arrow"></span></a>
+                {{--<ul class="nav nav-second-level">
                     <li>
                         <a href="#">Notifications</a>
                     </li>
@@ -23,7 +26,7 @@
                     <li>
                         <a href="#">Free Link</a>
                     </li>
-                </ul>
+                </ul> --}}
             </li>
 
             <li>
@@ -60,19 +63,6 @@
 
                     </li>
                 </ul>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-qrcode "></i>Tabs & Panels</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-bar-chart-o"></i>Mettis Charts</a>
-            </li>
-
-            <li>
-                <a href="#"><i class="fa fa-edit "></i>Last Link </a>
-            </li>
-            <li>
-                <a href="blank.html"><i class="fa fa-table "></i>Blank Page</a>
             </li>
         </ul>
 

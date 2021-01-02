@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>DASHGUM - Bootstrap Admin Template</title>
+    <title>Admin Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('assets')}}/login/assets/css/bootstrap.css" rel="stylesheet">
@@ -34,19 +34,20 @@ MAIN CONTENT
 <div id="login-page">
     <div class="container">
 
-        <form class="form-login" action="index.html">
+        <form class="form-login" action="{{ route('admin_logincheck') }}" method="post">
+            @csrf
             <h2 class="form-login-heading">sign in now</h2>
             <div class="login-wrap">
-                <input type="text" class="form-control" placeholder="User ID" autofocus>
+                <input  id="email" type="email" name="email" class="form-control" placeholder="email" autofocus>
                 <br>
-                <input type="password" class="form-control" placeholder="Password">
+                <input id="password" type="password" name="password" class="form-control" placeholder="Password">
                 <label class="checkbox">
 		                <span class="pull-right">
-		                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
+		                    <a data-toggle="modal" href=""> Forgot Password?</a>
 
 		                </span>
                 </label>
-                <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+                <button class="btn btn-theme btn-block" type="submit"> GİRİŞ</button>
                 <hr>
 
                 <div class="login-social-link centered">
@@ -62,6 +63,7 @@ MAIN CONTENT
                 </div>
 
             </div>
+        </form>
 
             <!-- Modal -->
             <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
@@ -85,7 +87,7 @@ MAIN CONTENT
             </div>
             <!-- modal -->
 
-        </form>
+
 
     </div>
 </div>

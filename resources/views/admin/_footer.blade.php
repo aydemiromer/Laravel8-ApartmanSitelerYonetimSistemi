@@ -6,14 +6,8 @@
 
     </div>
 </div>
-<!-- /. ROW  -->
 
-</div>
-<!-- /. PAGE INNER  -->
-</div>
-<!-- /. PAGE WRAPPER  -->
-</div>
-<!-- /. WRAPPER  -->
+
 <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
 <!-- JQUERY SCRIPTS -->
 <script src="{{asset('assets')}}/admin/assets/js/jquery-1.10.2.js"></script>

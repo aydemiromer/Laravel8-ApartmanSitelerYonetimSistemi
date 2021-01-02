@@ -17,10 +17,10 @@
 </head>
 <body>
 <div id="wrapper">
-@include ('admin._header')
-@include ('admin._sidebar')
-@yield('content')
-@include('admin._footer')
-@yield('footer')
+    @include ('admin._header')
+    @include ('admin._sidebar')
+    @yield('content')
+    @include('admin._footer')
+    @yield('footer')
 </body>
 </html>
