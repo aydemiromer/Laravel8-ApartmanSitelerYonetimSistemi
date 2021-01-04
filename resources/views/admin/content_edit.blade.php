@@ -55,6 +55,15 @@
                                 <input type="number" name="price" class="form-control" value="{{$data->price}}" >
                             </div>
                             <div class="form-group">
+                                <label>Image</label>
+                                <input type="file" name="image" class="form-control" value="{{$data->image}}">
+
+                                @if ($rs->image)
+                                    <img src="{{Storage::url($rs->image)}}" height="100">
+                                @endif
+
+                            </div>
+                            <div class="form-group">
                                 <label>Tax</label>
                                 <input type="number" name="tax" class="form-control"  value="{{$data->tax}}" >
                             </div>

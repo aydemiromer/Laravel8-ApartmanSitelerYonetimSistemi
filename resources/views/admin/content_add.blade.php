@@ -16,7 +16,7 @@
             <hr />
 
                     <!-- form start -->
-                    <form role="form" action="{{route('admin_content_store')}}" method="post">
+                    <form role="form" action="{{route('admin_content_store')}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="box-body">
                             <div class="form-group">
@@ -32,40 +32,47 @@
                             </div>
                             <div class="form-group">
                                 <label>Title</label>
-                                <input type="text" name="title" class="form-control" id="exampleInputPassword1" >
+                                <input type="text" name="title" class="form-control"  >
                             </div>
                             <div class="form-group">
                                 <label>Keywords</label>
-                                <input type="text" name="keywords" class="form-control" id="exampleInputPassword1">
+                                <input type="text" name="keywords" class="form-control" >
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
-                                <input type="text" name="description" class="form-control" id="exampleInputPassword1" >
+                                <input type="text" name="description" class="form-control"  >
                             </div>
 
                             <div class="form-group">
                                 <label>MenuId</label>
-                                <input type="number" name="menu_id" class="form-control" id="exampleInputPassword1" >
+                                <input type="number" name="menu_id" class="form-control"  >
                             </div>
                             <div class="form-group">
                                 <label>Detail</label>
-                                <input type="text" name="detail" class="form-control" id="exampleInputPassword1" >
+                                <input type="text" name="detail" class="form-control"  >
                             </div>
                             <div class="form-group">
                                 <label>Price</label>
-                                <input type="number" name="price" class="form-control" id="exampleInputPassword1" >
+                                <input type="number" name="price" class="form-control"  >
+                            </div>
+                            <div class="form-group">
+                                <label>Image</label>
+                                <input type="file" name="image" class="form-control"  >
+                                {{--@if ($rs->image)
+                                    <img src="{{Storage::url($rs->image)}}" height="30">
+                                @endif--}}
                             </div>
                             <div class="form-group">
                                 <label>Tax</label>
-                                <input type="number" name="tax" class="form-control" id="exampleInputPassword1" >
+                                <input type="number" name="tax" class="form-control"  >
                             </div>
                             <div class="form-group">
                                 <label>Type</label>
-                                <input type="text" name="type" class="form-control" id="exampleInputPassword1" >
+                                <input type="text" name="type" class="form-control"  >
                             </div>
                             <div class="form-group">
                                 <label>User</label>
-                                <input type="number" name="user" class="form-control" id="exampleInputPassword1" >
+                                <input type="number" name="user" class="form-control"  >
                             </div>
 
                             <div class="form-group">

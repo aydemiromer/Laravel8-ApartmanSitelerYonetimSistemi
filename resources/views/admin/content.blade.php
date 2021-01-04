@@ -29,6 +29,8 @@
                                 <th rowspan="1" colspan="1">Menu</th>
                                 <th rowspan="1" colspan="1">Title</th>
                                 <th rowspan="1" colspan="1">Price</th>
+                                <th rowspan="1" colspan="1">Image</th>
+                                <th rowspan="1" colspan="1">Tax</th>
                                 <th rowspan="1" colspan="1">Status</th>
                                 <th rowspan="1" colspan="1">Edit</th>
                                 <th rowspan="1" colspan="1">Delete</th></tr>
@@ -42,6 +44,23 @@
                                     <td class="sorting_1">{{$rs -> menu_id}}</td>
                                     <td class="sorting_1">{{$rs -> title}}</td>
                                     <td class="sorting_1">{{$rs -> price}}</td>
+
+
+                                    <td>
+                                        @if ($rs->image)
+                                            <img src="{{Storage::url($rs->image)}}" height="100" >
+                                        @endif
+
+
+                                    </td>
+
+
+
+                                    <td class="sorting_1">{{$rs -> tax}}</td>
+
+
+
+
                                     <td class=" ">{{$rs -> status}}</td>
                                     <td class="center "><a href="{{route('admin_content_edit', ['id' => $rs->id])}}">Edit</a></td>
                                     <td class="center "><a href="{{route('admin_content_delete', ['id' => $rs->id])}}" onclick="return confirm('are you want to delete?')">Delete</a></td>
