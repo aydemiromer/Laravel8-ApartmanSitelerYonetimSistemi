@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="I was added Database Content and created Admin/content files.Menu,Content add,edit and deleted process was created.">
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Content Image Upload and Display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ContentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/content.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/content_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/content_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/content_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/content_edit.blade.php" afterDir="false" />
     </list>
@@ -216,7 +213,8 @@
       <workItem from="1609586480422" duration="19274000" />
       <workItem from="1609670377781" duration="14589000" />
       <workItem from="1609759174185" duration="948000" />
-      <workItem from="1609777564090" duration="6725000" />
+      <workItem from="1609777564090" duration="6864000" />
+      <workItem from="1609785099384" duration="494000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -253,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609759521043</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Content Image Upload and Display">
+      <created>1609784461115</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609784461115</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +284,8 @@
     <MESSAGE value="Created Menu Table" />
     <MESSAGE value="I was added Database Content and created Admin/content files." />
     <MESSAGE value="I was added Database Content and created Admin/content files.Menu,Content add,edit and deleted process was created." />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Content Image Upload and Display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Content Image Upload and Display" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
@@ -294,10 +300,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="511" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1474.864@0.0.1474.864" timestamp="1607260739874" />
-    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609009603376">
+    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609785164468">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1474.864@0.0.1474.864" timestamp="1609009603376" />
+    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1474.864@0.0.1474.864" timestamp="1609785164468" />
     <state x="468" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609683772709">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -338,10 +344,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="573" y="355" key="NewPhpFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1609085666332" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609759528485">
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609784464720">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609759528485" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609784464720" />
     <state x="555" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609006645900">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

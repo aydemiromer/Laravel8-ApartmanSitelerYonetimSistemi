@@ -1,6 +1,11 @@
 @extends('layouts.admin')
 
 @section('title', 'Admin Panel HomePage')
+@section('javascript')
+
+    <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+
+@endsection
 
 @section('content')
 
@@ -16,7 +21,7 @@
             <hr />
 
                     <!-- form start -->
-                    <form role="form" action="{{route('admin_content_update', ['id'=>$data->id])}}" method="post">
+                    <form role="form" action="{{route('admin_content_update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="box-body">
                             <div class="form-group">
@@ -48,7 +53,10 @@
                             </div>
                             <div class="form-group">
                                 <label>Detail</label>
-                                <input type="text" name="detail" class="form-control"  value="{{$data->detail}}">
+                                <textarea id="detail" name="detail"></textarea>
+                                <script>
+                                    CKEDITOR.replace( 'detail' );
+                                </script>
                             </div>
                             <div class="form-group">
                                 <label>Price</label>

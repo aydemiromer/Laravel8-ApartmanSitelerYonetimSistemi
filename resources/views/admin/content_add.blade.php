@@ -1,6 +1,11 @@
 @extends('layouts.admin')
 
 @section('title', 'Admin Panel HomePage')
+@section('javascript')
+
+    <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+
+@endsection
 
 @section('content')
 
@@ -49,7 +54,10 @@
                             </div>
                             <div class="form-group">
                                 <label>Detail</label>
-                                <input type="text" name="detail" class="form-control"  >
+                                <textarea id="detail" name="detail"></textarea>
+                                <script>
+                                    CKEDITOR.replace( 'detail' );
+                                </script>
                             </div>
                             <div class="form-group">
                                 <label>Price</label>
