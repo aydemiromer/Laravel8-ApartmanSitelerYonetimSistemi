@@ -35,10 +35,22 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('menu', [MenuController::class, 'index'])->name('admin_menu');
     Route::get('menu/add', [MenuController::class, 'add'])->name('admin_menu_add');
     Route::post('menu/create', [MenuController::class, 'create'])->name('admin_menu_create');
-    Route::post('menu/update', [MenuController::class, 'update'])->name('admin_menu_update');
+    Route::post('menu/update/{id}', [MenuController::class, 'update'])->name('admin_menu_update');
+    Route::get('menu/edit/{id}', [MenuController::class, 'edit'])->name('admin_menu_edit');
     Route::get('menu/delete/{id}', [MenuController::class, 'destroy'])->name('admin_menu_delete');
     Route::get('menu/show', [MenuController::class, 'show'])->name('admin_menu_show');
+});
 
+    #Contents
+Route::prefix('content')->group(function () {
+
+    Route::get('/', [\App\Http\Controllers\Admin\ContentController::class, 'index'])->name('admin_content');
+    Route::post('store', [\App\Http\Controllers\Admin\ContentController::class, 'store'])->name('admin_content_store');
+    Route::get('create', [\App\Http\Controllers\Admin\ContentController::class, 'create'])->name('admin_content_add');
+    Route::post('update/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'update'])->name('admin_content_update');
+    Route::get('edit/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'edit'])->name('admin_content_edit');
+    Route::get('delete/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'destroy'])->name('admin_content_delete');
+    Route::get('show', [\App\Http\Controllers\Admin\ContentController::class, 'show'])->name('admin_content_show');
 });
 
 

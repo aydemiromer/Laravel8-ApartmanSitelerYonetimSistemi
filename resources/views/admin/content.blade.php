@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin Panel HomePage')
+@section('title', 'Content')
 
 @section('content')
 
@@ -8,13 +8,13 @@
         <div id="page-inner">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>MENUS</h2>
+                    <h2>CONTENTS</h2>
 
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="card-header">
-                    <a class="btn btn-block btn-info" type="button" style="width:200px" href="{{route('admin_menu_add')}}">Add</a>
+                    <a class="btn btn-block btn-info" type="button" style="width:200px" href="{{route('admin_content_add')}}">Add</a>
                 </div>
             </div>
             <hr />
@@ -26,8 +26,9 @@
                             <thead>
                             <tr>
                                 <th rowspan="1" colspan="1">Id</th>
-                                <th rowspan="1" colspan="1">Parent</th>
+                                <th rowspan="1" colspan="1">Menu</th>
                                 <th rowspan="1" colspan="1">Title</th>
+                                <th rowspan="1" colspan="1">Price</th>
                                 <th rowspan="1" colspan="1">Status</th>
                                 <th rowspan="1" colspan="1">Edit</th>
                                 <th rowspan="1" colspan="1">Delete</th></tr>
@@ -38,11 +39,12 @@
 
                                 <tr class="gradeU odd">
                                     <td class="">{{$rs -> id}}</td>
-                                    <td class="sorting_1">{{$rs -> parent_id}}</td>
+                                    <td class="sorting_1">{{$rs -> menu_id}}</td>
                                     <td class="sorting_1">{{$rs -> title}}</td>
+                                    <td class="sorting_1">{{$rs -> price}}</td>
                                     <td class=" ">{{$rs -> status}}</td>
-                                    <td class="center "><a href="{{route('admin_menu_edit', ['id' => $rs->id])}}">Edit</a></td>
-                                    <td class="center "><a href="{{route('admin_menu_delete', ['id' => $rs->id])}}" onclick="return confirm('are you want to delete?')">Delete</a></td>
+                                    <td class="center "><a href="{{route('admin_content_edit', ['id' => $rs->id])}}">Edit</a></td>
+                                    <td class="center "><a href="{{route('admin_content_delete', ['id' => $rs->id])}}" onclick="return confirm('are you want to delete?')">Delete</a></td>
                                 </tr>
 
                             @endforeach
