@@ -20,18 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ImageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_182543_create_images_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_183148_image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/images/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/images/edit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/images/landscape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/image_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_06_100349_create_settings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_06_102428_setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ContentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/content_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/content_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,6 +222,7 @@
       <workItem from="1609777564090" duration="6864000" />
       <workItem from="1609785099384" duration="568000" />
       <workItem from="1609870585890" duration="11465000" />
+      <workItem from="1609920032228" duration="7874000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -276,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609785643191</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I created image gallery and changed some commands.I created image_add.blade.php and ImageController.php folders.">
+      <created>1609920198551</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609920198551</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +308,8 @@
     <MESSAGE value="I was added Database Content and created Admin/content files.Menu,Content add,edit and deleted process was created." />
     <MESSAGE value="Content Image Upload and Display" />
     <MESSAGE value="Created Text editor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Text editor" />
+    <MESSAGE value="I created image gallery and changed some commands.I created image_add.blade.php and ImageController.php folders." />
+    <option name="LAST_COMMIT_MESSAGE" value="I created image gallery and changed some commands.I created image_add.blade.php and ImageController.php folders." />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
@@ -363,10 +368,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="573" y="355" key="NewPhpFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1609085666332" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609785687124">
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609924250522">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609785687124" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609924250522" />
     <state x="555" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609006645900">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

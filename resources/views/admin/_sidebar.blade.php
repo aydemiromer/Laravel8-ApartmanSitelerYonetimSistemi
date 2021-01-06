@@ -33,7 +33,7 @@
                 <a href="{{route('admin_content')}}"><i class="fa fa-table "></i>Products</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-edit "></i>Forms </a>
+                <a href="#"><i class="fa fa-edit "></i>Blank </a>
             </li>
 
 
@@ -65,6 +65,7 @@
                 </ul>
             </li>
         </ul>
+
 
     </div>
 
