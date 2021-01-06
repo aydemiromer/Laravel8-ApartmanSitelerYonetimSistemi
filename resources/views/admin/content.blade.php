@@ -30,6 +30,7 @@
                                 <th rowspan="1" colspan="1">Title</th>
                                 <th rowspan="1" colspan="1">Price</th>
                                 <th rowspan="1" colspan="1">Image</th>
+                                <th rowspan="1" colspan="1">Image Gallery</th>
                                 <th rowspan="1" colspan="1">Tax</th>
                                 <th rowspan="1" colspan="1">Status</th>
                                 <th rowspan="1" colspan="1">Edit</th>
@@ -50,9 +51,10 @@
                                         @if ($rs->image)
                                             <img src="{{Storage::url($rs->image)}}" height="100" >
                                         @endif
-
-
                                     </td>
+                                    <td><a href="{{route('admin_image_add',['content_id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')">
+                                            <img src="{{asset('assets')}}/admin/assets/images/landscape.png" height="30">
+                                        </a></td>
 
 
 
@@ -62,8 +64,11 @@
 
 
                                     <td class=" ">{{$rs -> status}}</td>
-                                    <td class="center "><a href="{{route('admin_content_edit', ['id' => $rs->id])}}">Edit</a></td>
-                                    <td class="center "><a href="{{route('admin_content_delete', ['id' => $rs->id])}}" onclick="return confirm('are you want to delete?')">Delete</a></td>
+                                    <td class="center "><a href="{{route('admin_content_edit', ['id' => $rs->id])}}">
+                                            <img src="{{asset('assets')}}/admin/assets/images/edit.png" height="30"></a></td>
+                                    <td class="center ">
+                                        <a href="{{route('admin_content_delete', ['id' => $rs->id])}}" onclick="return confirm('are you want to delete?')">
+                                            <img src="{{asset('assets')}}/admin/assets/images/delete.png" height="30"></a></td>
                                 </tr>
 
                             @endforeach

@@ -39,10 +39,10 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('menu/edit/{id}', [MenuController::class, 'edit'])->name('admin_menu_edit');
     Route::get('menu/delete/{id}', [MenuController::class, 'destroy'])->name('admin_menu_delete');
     Route::get('menu/show', [MenuController::class, 'show'])->name('admin_menu_show');
-});
+
 
     #Contents
-Route::prefix('content')->group(function () {
+    Route::prefix('content')->group(function () {
 
     Route::get('/', [\App\Http\Controllers\Admin\ContentController::class, 'index'])->name('admin_content');
     Route::post('store', [\App\Http\Controllers\Admin\ContentController::class, 'store'])->name('admin_content_store');
@@ -51,6 +51,17 @@ Route::prefix('content')->group(function () {
     Route::get('edit/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'edit'])->name('admin_content_edit');
     Route::get('delete/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'destroy'])->name('admin_content_delete');
     Route::get('show', [\App\Http\Controllers\Admin\ContentController::class, 'show'])->name('admin_content_show');
+    });
+
+    #Image
+    Route::prefix('image')->group(function () {
+
+
+        Route::post('store/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('admin_image_store');
+        Route::get('create/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('admin_image_add');
+        Route::get('delete/{id}/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('admin_image_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
+    });
 });
 
 
