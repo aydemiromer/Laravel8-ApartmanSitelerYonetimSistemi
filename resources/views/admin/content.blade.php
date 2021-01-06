@@ -42,8 +42,11 @@
 
                                 <tr class="gradeU odd">
                                     <td class="">{{$rs -> id}}</td>
-                                    <td class="sorting_1">{{$rs -> menu_id}}</td>
-                                    <td class="sorting_1">{{$rs -> title}}</td>
+                                    <td>
+                                        {{\App\Http\Controllers\Admin\MenuController::getParentsTree($rs->menu,$rs->menu->title) }}
+                                    </td>
+                                    <td class="sorting_1">{{$rs -> menu->title}}</td>
+                                   {{-- <td class="sorting_1">{{$rs -> title}}</td>--}}
                                     <td class="sorting_1">{{$rs -> price}}</td>
 
 

@@ -25,12 +25,12 @@
                         @csrf
                         <div class="box-body">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Content</label>
+                                <label for="exampleInputEmail1">Menu</label>
 
                                 <select class="form-control" name="menu_id">
 
                                     @foreach($datalist as $rs)
-                                    <option value="{{$rs -> id}}">{{$rs -> title}}</option>
+                                    <option value="{{$rs -> id}}">{{\App\Http\Controllers\Admin\MenuController::getParentsTree($rs,$rs->title) }}</option>
                                     @endforeach
                                 </select>
 
@@ -48,10 +48,10 @@
                                 <input type="text" name="description" class="form-control"  >
                             </div>
 
-                            <div class="form-group">
+                            {{--<div class="form-group">
                                 <label>MenuId</label>
                                 <input type="number" name="menu_id" class="form-control"  >
-                            </div>
+                            </div>--}}
                             <div class="form-group">
                                 <label>Detail</label>
                                 <textarea id="detail" name="detail"></textarea>

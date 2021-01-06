@@ -25,11 +25,13 @@
                         @csrf
                         <div class="box-body">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Content</label>
+                                <label for="exampleInputEmail1">Menu</label>
                                 <select class="form-control" name="content_id">
 
                                     @foreach($datalist as $rs)
-                                        <option value="{{$rs -> id}}" @if ($rs->id==$data->menu_id) selected="selected" @endif>{{$rs -> title}}</option>
+                                        <option value="{{$rs -> id}}" @if ($rs->id==$data->parent_id) selected="selected" @endif>
+                                            {{\App\Http\Controllers\Admin\MenuController::getParentsTree($rs,$rs->title) }}
+                                        </option>
                                     @endforeach
                                 </select>
 

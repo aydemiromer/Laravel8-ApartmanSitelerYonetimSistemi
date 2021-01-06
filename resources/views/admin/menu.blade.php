@@ -38,7 +38,9 @@
 
                                 <tr class="gradeU odd">
                                     <td class="">{{$rs -> id}}</td>
-                                    <td class="sorting_1">{{$rs -> parent_id}}</td>
+                                    <td>
+                                        {{\App\Http\Controllers\Admin\MenuController::getParentsTree($rs,$rs->title) }}
+                                    </td>
                                     <td class="sorting_1">{{$rs -> title}}</td>
                                     <td class=" ">{{$rs -> status}}</td>
                                     <td class="center "><a href="{{route('admin_menu_edit', ['id' => $rs->id])}}">Edit</a></td>

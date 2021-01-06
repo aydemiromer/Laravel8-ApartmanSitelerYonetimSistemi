@@ -30,7 +30,7 @@ class ContentController extends Controller
      */
     public function create()
     {
-        $datalist = Menu::all();
+        $datalist = Menu::with('children')->get();
         return view('admin.content_add',['datalist' =>$datalist]);
     }
 
@@ -81,7 +81,8 @@ class ContentController extends Controller
     public function edit(Content $content,$id)
     {
         $data = Content::find($id);
-        $datalist = Menu::all();
+
+        $datalist = Menu::with('children')->get();
         return view('admin.content_edit',['data'=>$data,'datalist'=>$datalist]);
     }
 
