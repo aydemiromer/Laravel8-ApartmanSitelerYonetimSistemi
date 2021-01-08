@@ -39,7 +39,10 @@
 <body>
 
 @include('home._navbar')
-@include('home._category')
+
+@include('home._slider')
+
+
 @section('content')
 @show
 @include('home._footer')

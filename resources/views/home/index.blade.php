@@ -1,14 +1,17 @@
 @extends('layouts.home')
+@php
+    $setting = \App\Http\Controllers\HomeController::getsetting()
+@endphp
 
-@section('title', 'Apartman Siteler Yönetim Sistemi')
+@section('title',$setting->title)
 
 @section('description')
-    Türkiyenin en iyi Apartman Siteler Yönetim Sistemi
+    {{ $setting->description}}
 @endsection
 
-@section('keywords')
+@section('keywords', $setting->keywords)
 
-@endsection
+
 
 @section('content')
     <!--/ Services Star /-->

@@ -1,75 +1,16 @@
-<!--/ Carousel Star /-->
-<div class="intro intro-carousel">
-    <div id="carousel" class="owl-carousel owl-theme">
-        <div class="carousel-item-a intro-item bg-image" style="background-image: {{asset('assets')}}">
-            <div class="overlay overlay-a"></div>
-            <div class="intro-content display-table">
-                <div class="table-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="intro-body">
-                                    <p class="intro-title-top">Doral, Florida
-                                        <br> 78345</p>
-                                    <h1 class="intro-title mb-4">
-                                        <span class="color-b">204 </span> Mount
-                                        <br> Olive Road Two</h1>
-                                    <p class="intro-subtitle intro-price">
-                                        <a href="#"><span class="price-a">rent | $ 12.000</span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-2.jpg)">
-            <div class="overlay overlay-a"></div>
-            <div class="intro-content display-table">
-                <div class="table-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="intro-body">
-                                    <p class="intro-title-top">Doral, Florida
-                                        <br> 78345</p>
-                                    <h1 class="intro-title mb-4">
-                                        <span class="color-b">204 </span> Rino
-                                        <br> Venda Road Five</h1>
-                                    <p class="intro-subtitle intro-price">
-                                        <a href="#"><span class="price-a">rent | $ 12.000</span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-3.jpg)">
-            <div class="overlay overlay-a"></div>
-            <div class="intro-content display-table">
-                <div class="table-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="intro-body">
-                                    <p class="intro-title-top">Doral, Florida
-                                        <br> 78345</p>
-                                    <h1 class="intro-title mb-4">
-                                        <span class="color-b">204 </span> Alira
-                                        <br> Roan Road One</h1>
-                                    <p class="intro-subtitle intro-price">
-                                        <a href="#"><span class="price-a">rent | $ 12.000</span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+@php
+    $parentMenus = \App\Http\Controllers\HomeController::menulist()
+@endphp
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+       aria-haspopup="true" aria-expanded="false">
+        Pages
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="property-single.html">Property Single</a>
+        <a class="dropdown-item" href="blog-single.html">Blog Single</a>
+        <a class="dropdown-item" href="agents-grid.html">Agents Grid</a>
+        <a class="dropdown-item" href="agent-single.html">Agent Single</a>
     </div>
-</div>
-<!--/ Carousel end /-->
+</li>
