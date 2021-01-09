@@ -25,9 +25,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('aboutus')}}">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="property-grid.html">Property</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('references')}}">References</a>
                 </li>
@@ -63,38 +61,28 @@
 
 
                 <li class="nav-item dropdown">
+                    @auth
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i>
-                        @auth
+                                <strong class="text-uppercase">{{Auth::user()->name}}</strong>
 
-
-                                <strong class="text-uppercase">{{Auth::user()->name}}
-
-                                </strong>
-
-                        @endauth
-                        @guest
-                                <a href="#" class="text-uppercase">Login</a> /
-                                <a href="#" class="text-uppercase">Join</a>
-
-                        @endguest
                     </a>
 
-
-
-
-
-                    <ul class="dropdown-menu" role="menu">
-
-                        <ul class="custom-menu">
-                            <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                            <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                            <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                            <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                            <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i> Logout </a> </li>
+                        <ul class="dropdown-menu" role="menu">
+                            <ul class="custom-menu">
+                                <li><a href="{{route('profile')}}"><i class="fa fa-user-o"></i> My Account </a> </li>
+                                <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i> Logout </a> </li>
+                            </ul>
                         </ul>
-                    </ul>
+                    @endauth
                 </li>
+                <li class="nav-item">
+                      @guest
+                        <a href="/login" class="btn btn-success">Login</a>
+                        <a href="/register" class="btn btn-danger">Register</a>
+                    @endguest
+                </li>
+
             </ul>
 
         </div>

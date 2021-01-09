@@ -2,7 +2,7 @@
 
 
 <!--/ Carousel Star /-->
-<div class="intro intro-carousel">
+<div class="intro intro-carousel" >
     <div id="carousel" class="owl-carousel owl-theme">
         <div class="carousel-item-a intro-item bg-image" style="background-image: {{asset('assets')}}">
             <div class="overlay overlay-a"></div>
