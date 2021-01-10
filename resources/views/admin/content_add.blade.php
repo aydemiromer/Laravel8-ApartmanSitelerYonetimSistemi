@@ -74,14 +74,7 @@
                                 <label>Tax</label>
                                 <input type="number" name="tax" class="form-control"  >
                             </div>
-                            <div class="form-group">
-                                <label>Type</label>
-                                <input type="text" name="type" class="form-control"  >
-                            </div>
-                            <div class="form-group">
-                                <label>User</label>
-                                <input type="number" name="user" class="form-control"  >
-                            </div>
+
 
                             <div class="form-group">
                                 <label>Status</label>

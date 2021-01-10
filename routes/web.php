@@ -21,6 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
+
 Route::get('/home',[HomeController::class, 'index'])->name('homepage');
 Route::get('/aboutus',[HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/references',[HomeController::class, 'references'])->name('references');
@@ -28,11 +29,8 @@ Route::get('/fag',[HomeController::class, 'fag'])->name('fag');
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 
 
-Route::get('/', function () {
-    return view('home.index');
-});
 
-Route::get( '/home', [HomeController::class, 'index']);
+
 
 
 Route::middleware('auth')->prefix('admin')->group(function () {
@@ -83,7 +81,6 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
 
 });
 
-//Route::get('/admin', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home');
 
 Route::get('/admin/login', [HomeController::class, 'login'])->name('admin_login');
 Route::post('/admin/logincheck', [HomeController::class, 'logincheck'])->name('admin_logincheck');

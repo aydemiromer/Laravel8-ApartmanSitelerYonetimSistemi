@@ -3,19 +3,16 @@
     $setting = \App\Http\Controllers\HomeController::getsetting()
 @endphp
 
-@section('title',$setting->title)
+@section('title',)
 
 @section('description')
-    {{ $setting->description}}
+
 @endsection
 
-@section('keywords', $setting->keywords)
-
-
-
-
+@section('keywords', )
 
 @section('content')
+    @include('home._slider')
     <!--/ Services Star /-->
     <section class="section-services section-t8">
         <div class="container">

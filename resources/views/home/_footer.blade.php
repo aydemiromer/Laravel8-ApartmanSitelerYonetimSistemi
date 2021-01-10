@@ -2,7 +2,6 @@
     $setting = \App\Http\Controllers\HomeController::getsetting()
 @endphp
 
-
 <section class="section-footer">
     <div class="container">
         <div class="row">

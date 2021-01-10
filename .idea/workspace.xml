@@ -19,22 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Created Home Page Setting Meta tags data User and Page links">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_blank.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/appyedek.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/homenotslider.blade.php" afterDir="false" />
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Laravel User Profile Page oluşturma Jetstream sayfasını panele alma">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_09_173201_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_10_122511_add_phone_to_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_10_123113_add_address_to_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/hero2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/aboutus.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/references.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_category.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_09_173043_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/content_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/content_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/homenotslider.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,14 +199,16 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
+    <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\layouts" />
       <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\home" />
+      <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\layouts" />
       <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\admin" />
     </key>
   </component>
@@ -235,7 +246,10 @@
       <workItem from="1609959006913" duration="132000" />
       <workItem from="1610107548052" duration="34000" />
       <workItem from="1610109885541" duration="23065000" />
-      <workItem from="1610182280441" duration="12290000" />
+      <workItem from="1610182280441" duration="23635000" />
+      <workItem from="1610211202674" duration="1587000" />
+      <workItem from="1610213050527" duration="2824000" />
+      <workItem from="1610280997734" duration="5839000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -321,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610134863199</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Laravel User Profile Page oluşturma Jetstream sayfasını panele alma">
+      <created>1610195101446</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610195101446</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,25 +374,26 @@
     <MESSAGE value="I created Settings files." />
     <MESSAGE value="Category Tree Sub Category Gösterimi ve Fonksiyon Tanımı ve Relation Category Product One to Many İlişkisi" />
     <MESSAGE value="Created Home Page Setting Meta tags data User and Page links" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Home Page Setting Meta tags data User and Page links" />
+    <MESSAGE value="Laravel User Profile Page oluşturma Jetstream sayfasını panele alma" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel User Profile Page oluşturma Jetstream sayfasını panele alma" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="364" y="110" key="#Inspections/0.0.1474.864@0.0.1474.864" timestamp="1609500377725" />
-    <state x="330" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609012833040">
+    <state x="330" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610208217912">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="330" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" timestamp="1609012833040" />
+    <state x="330" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" timestamp="1610208217912" />
     <state x="511" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607260739874">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="511" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1474.864@0.0.1474.864" timestamp="1607260739874" />
-    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609785164468">
+    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610202069721">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1474.864@0.0.1474.864" timestamp="1609785164468" />
+    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610202069721" />
     <state x="468" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609874061440">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -412,14 +434,26 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="573" y="355" key="NewPhpFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1610186487320" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1610134879740">
+    <state x="520" y="152" key="RollbackChangesDialog" timestamp="1610208204623">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1610134879740" />
-    <state x="555" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609006645900">
+    <state x="520" y="152" key="RollbackChangesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610208204623" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1610195822925">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="555" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1474.864@0.0.1474.864" timestamp="1609006645900" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1610195822925" />
+    <state x="632" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610213262442">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="632" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1474.864@0.0.1474.864" timestamp="1610213262442" />
+    <state x="581" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610210691247">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="581" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1474.864@0.0.1474.864" timestamp="1610210691247" />
+    <state x="555" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610213784356">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="555" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1474.864@0.0.1474.864" timestamp="1610213784356" />
     <state x="455" y="203" key="refactoring.ChangeSignatureDialog" timestamp="1609944089913">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

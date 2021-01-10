@@ -45,7 +45,7 @@
                                     <td>
                                         {{\App\Http\Controllers\Admin\MenuController::getParentsTree($rs->menu,$rs->menu->title) }}
                                     </td>
-                                    <td class="sorting_1">{{$rs -> menu->title}}</td>
+                                    <td class="sorting_1">{{$rs -> title}}</td>
                                    {{-- <td class="sorting_1">{{$rs -> title}}</td>--}}
                                     <td class="sorting_1">{{$rs -> price}}</td>
 
