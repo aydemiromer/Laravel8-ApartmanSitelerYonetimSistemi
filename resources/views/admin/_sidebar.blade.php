@@ -33,7 +33,7 @@
                 <a href="{{route('admin_content')}}"><i class="fa fa-table "></i>Contents</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-edit "></i>Blank </a>
+                <a href="{{route('admin_message')}}"><i class="fa fa-comment "></i>Contact Message </a>
             </li>
 
 
