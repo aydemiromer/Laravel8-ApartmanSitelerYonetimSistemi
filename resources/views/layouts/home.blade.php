@@ -26,6 +26,11 @@
     <!-- Main Stylesheet File -->
     <link href="{{asset('assets')}}/css/style.css" rel="stylesheet">
 
+
+
+
+
+
     <!-- =======================================================
       Theme Name: EstateAgency
       Theme URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/

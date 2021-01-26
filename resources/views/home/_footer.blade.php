@@ -8,27 +8,25 @@
             <div class="col-sm-12 col-md-4">
                 <div class="widget-a">
                     <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">EstateAgency</h3>
+                        <h3 class="w-title-a text-brand">Şirket Bilgilerimiz</h3>
                     </div>
                     <div class="w-body-a">
                         <strong>Company :</strong> {{$setting->company}}
+                        <br>
+
                         <strong>Address :</strong> {{$setting->adress}}
+                        <br>
+                        <strong>Phone :</strong> {{$setting->phone}}
+                        <br>
+                        <strong>Email :</strong>{{$setting->email}}
                     </div>
-                    <div class="w-footer-a">
-                        <ul class="list-unstyled">
-                            <li class="color-a">
-                                <span class="color-text-a"><strong>Phone:</strong>
-                                    </span> {{$setting->phone}}</li>
-                            <li class="color-a">
-                                <span class="color-text-a"><strong> Email: </strong></span>{{$setting->email}}</li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 section-md-t3">
                 <div class="widget-a">
                     <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">The Company</h3>
+                        <h3 class="w-title-a text-brand">ApartAidat</h3>
                     </div>
                     <div class="w-body-a">
                         <div class="w-body-a">
@@ -37,19 +35,13 @@
                                     <i class="fa fa-angle-right"></i> <a href="{{'aboutus'}}">About Us</a>
                                 </li>
                                 <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Legal</a>
+                                    <i class="fa fa-angle-right"></i> <a href="#">References</a>
                                 </li>
                                 <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Agent Admin</a>
+                                    <i class="fa fa-angle-right"></i> <a href="#">Contact</a>
                                 </li>
                                 <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Careers</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Affiliate</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Privacy Policy</a>
+                                    <i class="fa fa-angle-right"></i> <a href="#">Fag</a>
                                 </li>
                             </ul>
                         </div>
@@ -60,28 +52,16 @@
             <div class="col-sm-12 col-md-4 section-md-t3">
                 <div class="widget-a">
                     <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">The Company</h3>
+                        <h3 class="w-title-a text-brand">Destek</h3>
                     </div>
                     <div class="w-body-a">
                         <div class="w-body-a">
                             <ul class="list-unstyled">
                                 <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Site Map</a>
+                                    <i class="fa fa-angle-right"></i> <a href="#">Yeni Üyelik</a>
                                 </li>
                                 <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Legal</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Agent Admin</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Careers</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Affiliate</a>
-                                </li>
-                                <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Privacy Policy</a>
+                                    <i class="fa fa-angle-right"></i> <a href="#">Sıkça Sorulan Sorular</a>
                                 </li>
                             </ul>
                         </div>

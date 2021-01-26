@@ -19,18 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="User Profile Page oluşturma Jetstream sayfasını panele alma ,User Profile Photo Ek Alanlar Ekleme Guncelleme ve hakkimizda Referans ve Contact Sayfaları">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MessageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_111126_create_messages_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_111922_message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/messages.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/messages_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/message.blade.php" afterDir="false" />
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="I created contact message and edited admin panel">
+      <change afterPath="$PROJECT_DIR$/resources/views/home/menu_contents.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ContentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/menutree.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,14 +186,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\admin" />
       <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\home" />
+      <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\admin" />
       <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\layouts" />
     </key>
   </component>
@@ -238,7 +236,10 @@
       <workItem from="1610213050527" duration="2824000" />
       <workItem from="1610280997734" duration="6202000" />
       <workItem from="1610620486728" duration="7689000" />
-      <workItem from="1610875969616" duration="6428000" />
+      <workItem from="1610875969616" duration="10206000" />
+      <workItem from="1611390901398" duration="7461000" />
+      <workItem from="1611490846356" duration="1466000" />
+      <workItem from="1611654445380" duration="13684000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -338,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610287715631</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="I created contact message and edited admin panel">
+      <created>1610883537659</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610883537659</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +380,8 @@
     <MESSAGE value="Created Home Page Setting Meta tags data User and Page links" />
     <MESSAGE value="Laravel User Profile Page oluşturma Jetstream sayfasını panele alma" />
     <MESSAGE value="User Profile Page oluşturma Jetstream sayfasını panele alma ,User Profile Photo Ek Alanlar Ekleme Guncelleme ve hakkimizda Referans ve Contact Sayfaları" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Profile Page oluşturma Jetstream sayfasını panele alma ,User Profile Photo Ek Alanlar Ekleme Guncelleme ve hakkimizda Referans ve Contact Sayfaları" />
+    <MESSAGE value="I created contact message and edited admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="I created contact message and edited admin panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
@@ -437,11 +446,11 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="520" y="152" key="RollbackChangesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610208204623" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1610287748989">
-      <screen x="0" y="0" width="1472" height="864" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1610883548097">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1472.864@0.0.1472.864" timestamp="1610287748989" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1610195822925" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1610883548097" />
     <state x="632" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610213262442">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

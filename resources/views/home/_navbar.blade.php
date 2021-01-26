@@ -12,7 +12,7 @@
             <span></span>
             <span></span>
         </button>
-        <a class="navbar-brand text-brand" href="{{route('home')}}">Estate<span class="color-b">Agency</span></a>
+        <a class="navbar-brand text-brand" href="{{route('home')}}">Apart<span class="color-b">Aidat</span></a>
         <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
                 data-target="#navbarTogglerDemo01" aria-expanded="false">
             <span class="fa fa-search" aria-hidden="true"></span>
@@ -43,17 +43,24 @@
                         Pages
                     </a>
                     <ul class="dropdown-menu" role="menu">
+
                         @foreach($parentMenus as $rs)
-                            <li class="dropdown side-dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{$rs->title}}</a>
-                                <div class="custom-menu">
-                                    <div class="row">
+
+                            <ul class="custom-menu">
+                                <a class="dropdown-menu-right" data-toggle="dropdown" aria-expanded="true">{{$rs->title}}</a>
+
+                                    <li>
+
+
                                         @if(count($rs->children))
-                                            @include('home.categorytree',['children'=>$rs->children])
+                                            @include('home.menutree',['children'=>$rs->children])
                                         @endif
-                                    </div>
-                                </div>
-                            </li>
+
+                                    </li>
+
+
+                            </ul>
+
                         @endforeach
                     </ul>
                 </li>
