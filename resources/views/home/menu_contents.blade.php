@@ -6,10 +6,18 @@
 
 @section('content')
 
-  <div id="breadcrumb">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <div id="breadcrumb">
       <div class="container">
           <ul class="breadcrumb">
               <li><a href="{{route('home')}}">Home</a> </li>
+              <br>
               <li class="active">{{ \App\Http\Controllers\Admin\MenuController::getParentsTree($data,$data->title) }} Contents </li>
           </ul>
       </div>
@@ -23,8 +31,8 @@
                         <img src="{{Storage::url($rs->image)}}" width="250" height="250" alt="">
                         <div class="single_product_text">
                             <h4>{{$rs->title}}</h4>
-                            <h3>Aidat: {{$rs->price}}</h3>
-                            <a href="#" class="add_cart">Ödeme<i class="ti-heart"></i></a>
+                            <h3>Aidat:{{$rs->price}}</h3>
+                            <a href="{{route('content',['id' => $rs -> id])}}" class="add_cart">DETAY<i class="ti-heart"></i></a>
                         </div>
 
                     </div>

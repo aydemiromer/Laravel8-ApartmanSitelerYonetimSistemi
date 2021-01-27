@@ -19,16 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="I created contact message and edited admin panel">
-      <change afterPath="$PROJECT_DIR$/resources/views/home/menu_contents.blade.php" afterDir="false" />
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Menu Contents Listelendi">
+      <change afterPath="$PROJECT_DIR$/resources/views/home/content_detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ContentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/menutree.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/menu_contents.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/menu_contents.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +234,8 @@
       <workItem from="1610875969616" duration="10206000" />
       <workItem from="1611390901398" duration="7461000" />
       <workItem from="1611490846356" duration="1466000" />
-      <workItem from="1611654445380" duration="13684000" />
+      <workItem from="1611654445380" duration="14115000" />
+      <workItem from="1611734860548" duration="5601000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -346,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610883537659</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Menu Contents Listelendi">
+      <created>1611675794000</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611675794000</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +384,8 @@
     <MESSAGE value="Laravel User Profile Page oluşturma Jetstream sayfasını panele alma" />
     <MESSAGE value="User Profile Page oluşturma Jetstream sayfasını panele alma ,User Profile Photo Ek Alanlar Ekleme Guncelleme ve hakkimizda Referans ve Contact Sayfaları" />
     <MESSAGE value="I created contact message and edited admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="I created contact message and edited admin panel" />
+    <MESSAGE value="Menu Contents Listelendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu Contents Listelendi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
@@ -446,11 +450,11 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="520" y="152" key="RollbackChangesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610208204623" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1610883548097">
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1611675800256">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1472.864@0.0.1472.864" timestamp="1610287748989" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1610883548097" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1611675800256" />
     <state x="632" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610213262442">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

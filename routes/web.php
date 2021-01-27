@@ -29,6 +29,7 @@ Route::get('/fag',[HomeController::class, 'fag'])->name('fag');
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage',[HomeController::class, 'sendmessage'])->name('sendmessage');
 Route::get('/menucontents/{id}',[HomeController::class, 'menucontents'])->name('menucontents');
+Route::get('/content/{id}',[HomeController::class, 'content'])->name('content');
 
 
 
