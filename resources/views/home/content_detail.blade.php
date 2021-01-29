@@ -59,27 +59,7 @@
                                         </div>
                                         <div class="summary-list">
                                             <ul class="list">
-                                                <li class="d-flex justify-content-between">
-                                                    <strong>Property ID:</strong>
-                                                    <span>1134</span>
-                                                </li>
-                                                <li class="d-flex justify-content-between">
-                                                    <strong>Location:</strong>
-                                                    <span>Chicago, IL 606543</span>
-                                                </li>
-                                                <li class="d-flex justify-content-between">
-                                                    <strong>Property Type:</strong>
-                                                    <span>House</span>
-                                                </li>
-                                                <li class="d-flex justify-content-between">
-                                                    <strong>Status:</strong>
-                                                    <span>Sale</span>
-                                                </li>
-                                                <li class="d-flex justify-content-between">
-                                                    <strong>Area:</strong>
-                                                    <span>340m
-                        <sup>2</sup>
-                      </span>
+
                                                 </li>
                                                 <li class="d-flex justify-content-between">
                                                     <strong>Beds:</strong>
@@ -135,7 +115,49 @@
                         </div>
                     </div>
                 </div>
+                <br>
+                <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                    <div class="title-box-d">
+                        <h3 class="title-d">Comments </h3>
+                    </div>
+                    <div class="box-comments">
+                        <ul class="list-comments">
+                            <li>
+                                @foreach($reviews as $rs)
+                                <div class="comment-avatar">
+                                    {{--<img src="img/author-2.jpg" alt="">--}}
+                                </div>
+                                <div class="comment-details">
+                                    <h4 class="comment-author">{{$rs->user->name}}</h4>
+                                    <span>{{$rs->created_at}}
+                                   {{-- <div class="review-rating pull-right">
+                                        <i class="fa fa-star" @if ($rs->rate<1) -o empty @endif></i>
+                                        <i class="fa fa-star" @if ($rs->rate<2) -o empty @endif></i>
+                                        <i class="fa fa-star" @if ($rs->rate<3) -o empty @endif></i>
+                                        <i class="fa fa-star" @if ($rs->rate<4) -o empty @endif></i>
+                                        <i class="fa fa-star" @if ($rs->rate<5) -o empty @endif></i>
+                                    </div>--}}</span>
 
+                                    <p class="comment-description">
+                                        <strong>{{$rs->subject}}</strong>
+                                        <p>
+                                        {{$rs->review}}</p>
+                                    </p>
+
+                                </div>
+                                @endforeach
+                            </li>
+
+                        </ul>
+                        <div class="title-box-d">
+                            <h3 class="title-d">Write Your Comment </h3>
+                        </div>
+                        <br>
+                <div>
+                    @livewire('review',['id'=> $data->id])
+                </div>
+                    </div>
+                </div>
             </section>
         </div>
     </section>

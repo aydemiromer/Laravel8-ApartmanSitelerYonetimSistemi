@@ -1,21 +1,21 @@
 
-@foreach($children as $subcategory)
+@foreach($children as $submenu)
     <ul class="list-links">
-        @if(count($subcategory->children))
+        @if(count($submenu->children))
             <li>
             <li style="color:#1087dd" >
-                {{$subcategory->title}}
+                {{$submenu->title}}
             </li>
 
            <li>
-                @include('home.menutree',['children'=>$subcategory->children])
+                @include('home.menutree',['children'=>$submenu->children])
             </li>
             </ul>
 
             <hr>
 
         @else
-                <a href="{{route('menucontents',['id'=>$subcategory->id])}}">{{$subcategory->title}}</a>
+                <a href="{{route('menucontents',['id'=>$submenu->id])}}">{{$submenu->title}}</a>
         @endif
 
 

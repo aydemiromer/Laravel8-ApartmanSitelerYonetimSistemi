@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Livewire\Review;
 use App\Models\Content;
 use App\Models\Image;
 use App\Models\Menu;
@@ -31,7 +32,6 @@ class HomeController extends Controller
             'page'=>'home'
         ];
 
-
         return view('home.index',$data);
     }
 
@@ -39,7 +39,26 @@ class HomeController extends Controller
 
         $data = Content::find($id);
         $datalist = Image::where('content_id',$id)->get();
-        return view('home.content_detail',['data' => $data,'datalist' => $datalist]);
+        $reviews = \App\Models\Review::where('content_id',$id)->get();
+
+        return view('home.content_detail',['data' => $data,'datalist' => $datalist,'reviews'=>$reviews]);
+    }
+
+    public function getcontent(Request $request){
+        $search = $request->input('search');
+        $count = Content::where('title','like','%'.$search.'%')->get()->count();
+        if($count==1){
+            $data = Content::where('title','like','%'.$search.'%')->first();
+            return redirect()->route('content',['id'=>$data->id]);
+        }
+        else{
+            return redirect()->route('contentlist',['search'=>$search]);
+        }
+    }
+
+    public function contentlist($search){
+        $datalist = Content::where('title','like','%'.$search.'%')->get();
+        return view('home.search_contents',['search'=>$search,'datalist'=>$datalist]);
     }
 
 

@@ -78,6 +78,7 @@
                         <ul class="dropdown-menu" role="menu">
                             <ul class="custom-menu">
                                 <li><a href="{{route('profile')}}"><i class="fa fa-user-o"></i> My Account </a> </li>
+                                <li><a href="{{route('myreviews')}}"><i class="fa fa-user-o"></i> Reviews </a> </li>
                                 <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i> Logout </a> </li>
                             </ul>
                         </ul>
@@ -94,62 +95,18 @@
 
         </div>
 
-        {{--<div type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse"
-                data-target="#navbarTogglerDemo01" aria-expanded="false">
-            <span class="fa fa-user" aria-hidden="true"></span>
-            <ul class="dropdown-toggle">
-                <li class="header-account dropdown default-dropdown">
-                    @auth
-                        <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-                            <strong class="text-uppercase">My Account
-                                <i class="fa fa-caret-down"></i>
-                            </strong>
-                        </div>
-                    @endauth
-                    <a href="#" class="text-uppercase">Login</a>
-
-                    <ul class="custom-menu">
-                        <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> Logout </a> </li>
-                    </ul>
-                </li>
-
-            </ul>
         </div>
---}}
-      {{--  <div class="pull-right">
-            <ul class="header-btns">
-                <li class="header-account dropdown default-dropdown">
-                    @auth
-                        <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-                            <div class="header-btns-icon">
-                                 <i class="fa fa-user-o"></i>
-                            </div>
-                            <strong class="text-uppercase">My Account
-                            <i class="fa fa-caret-down"></i>
-                            </strong>
-                        </div>
-                    @endauth
-                    <a href="#" class="text-uppercase">Login</a>
 
-                    <ul class="custom-menu">
-                        <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> My Account </a> </li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> Logout </a> </li>
-                    </ul>
-                </li>
-
-
-
-            </ul>
-        </div>
-    </div>--}}
-        </div>
     </div>
+
+        <form class="form-inline" action="{{route('getcontent')}}" method="post">
+            @csrf
+            @livewire('search')
+            <button class="search-btn" type="submit"><i class="fa fa-search"></i> </button>
+        </form>
+    @section('footerjs')
+        @livewireScripts
+    @endsection
+
 </nav>
 <!--/ Nav End /-->

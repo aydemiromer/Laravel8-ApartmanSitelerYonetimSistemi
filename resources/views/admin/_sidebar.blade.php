@@ -35,6 +35,9 @@
             <li>
                 <a href="{{route('admin_message')}}"><i class="fa fa-comment "></i>Contact Message </a>
             </li>
+            <li>
+                <a href="{{route('admin_review')}}"><i class="fa fa-comment "></i>Review </a>
+            </li>
 
 
             <li>
