@@ -23,6 +23,7 @@
                                         <br> {{$rs->title}}</h1>
                                     <p class="intro-subtitle intro-price">
                                         <span class="price-a"> Aidat: {{$rs->price}}</span>
+                                        <span class="price-a"><a href="{{route('content',['id' => $rs -> id])}}">Detay </a> </span>
                                     </p>
                                 </div>
                             </div>

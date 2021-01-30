@@ -23,22 +23,29 @@
   </div>
 
         <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
             @foreach($datalist as $rs)
             <div class="row">
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-md-4 col-sm-4">
                     <div class="single_product_item">
                         <img src="{{Storage::url($rs->image)}}" width="250" height="250" alt="">
-                        <div class="single_product_text">
+
                             <h4>{{$rs->title}}</h4>
                             <h3>Aidat:{{$rs->price}}</h3>
                             <a href="{{route('content',['id' => $rs -> id])}}" class="add_cart">DETAY<i class="ti-heart"></i></a>
-                        </div>
 
                     </div>
                 </div>
-                @endforeach
+
+            </div>
+            @endforeach
+        </div>
             </div>
         </div>
+        </div>
+
 
 
 @endsection

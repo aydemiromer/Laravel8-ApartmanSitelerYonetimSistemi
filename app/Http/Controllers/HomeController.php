@@ -23,12 +23,15 @@ class HomeController extends Controller
 
     public function index(){
         $setting=Setting::first();
-        $slider = Content::select('title','image','price')->limit(4)->get();
+        $slider = Content::select('id','title','image','price')->limit(4)->get();
+        $latest = Content::select('id','title','image','price')->limit(5)->orderByDesc('id')->get();
+
 
         $data = [
 
             'setting'=>$setting,
             'slider'=>$slider,
+            'latest'=>$latest,
             'page'=>'home'
         ];
 
