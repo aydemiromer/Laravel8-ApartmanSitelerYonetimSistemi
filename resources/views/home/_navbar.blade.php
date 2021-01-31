@@ -33,7 +33,7 @@
                     <a class="nav-link" href="{{route('contact')}}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('fag')}}">Fag</a>
+                    <a class="nav-link" href="{{route('faq')}}">Faq</a>
                 </li>
 
 
@@ -43,23 +43,15 @@
                         Pages
                     </a>
                     <ul class="dropdown-menu" role="menu">
-
                         @foreach($parentMenus as $rs)
 
-                            <ul class="custom-menu">
-                                <a class="dropdown-menu-right" data-toggle="dropdown" aria-expanded="true">{{$rs->title}}</a>
-
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">{{$rs->title}}</a>
                                     <li>
-
-
                                         @if(count($rs->children))
                                             @include('home.menutree',['children'=>$rs->children])
                                         @endif
-
                                     </li>
-
-
-                            </ul>
 
                         @endforeach
                     </ul>

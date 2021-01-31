@@ -1,6 +1,6 @@
 
     <div>
-        <input wire:model="search" name="search" type="text" class="input search-input" list="mylist" placeholder="search content..">
+        <input wire:model="search" name="search" type="text" class="input search-input" list="mylist" placeholder="search..">
 
         @if(!empty($query))
             <datalist id="mylist">

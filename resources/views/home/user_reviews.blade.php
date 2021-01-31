@@ -4,10 +4,10 @@
     <section class="intro-single">
         <div class="container">
             <div class="row">
-                <div id="aside" class="col-md-3">
+                <div id="aside" class="col-md-2">
                     @include('home.usermenu')
                 </div>
-
+                <div id="aside" class="col-md-10">
                 <div class="panel-body">
                     <div class="table-responsive">
                         <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
@@ -47,6 +47,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 @endsection

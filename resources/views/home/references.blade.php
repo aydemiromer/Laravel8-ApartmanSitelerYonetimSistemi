@@ -20,18 +20,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-
                 </div>
-                <div class="col-md-12 section-t8">
+                <div class="col-md-6 section-t8">
                     <div class="row">
                         <div class=" section-md-t8">
                             <div class="title-box-d">
                                 <h3 class="title">
                                     <span class="color">References</span>
-                                   </h3>
+                                </h3>
                             </div>
-
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="title-box-d">
                                 {!!$setting->references!!}
+                                    </div>
+                                 </div>
+                            </div>
 
                         </div>
                     </div>

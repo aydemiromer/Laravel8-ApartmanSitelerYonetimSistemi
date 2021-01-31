@@ -38,6 +38,9 @@
             <li>
                 <a href="{{route('admin_review')}}"><i class="fa fa-comment "></i>Review </a>
             </li>
+            <li>
+                <a href="{{route('admin_faq')}}"><i class="fa fa-comment "></i>Faq </a>
+            </li>
 
 
             <li>

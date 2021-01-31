@@ -19,12 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Created Laravel Search Products with Jetstream livewire Autocomplete and  Laravel Reviews with Jetstream Livewire and Manage at User and Admin Panel">
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Home Products Anasayfa da Ürünlerin Gösterilmesi">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/FaqController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Tutorial/Counter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Faq.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_094805_create_faqs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_095153_faq.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/faq.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/menu_contents.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/menu_contents.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/menutree.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/menutree.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/references.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/references.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,14 +205,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\admin" />
       <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\home" />
+      <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\admin" />
       <recent name="C:\PHP\Laravel-ApartmanSitelerYonetimSistemi\resources\views\layouts" />
     </key>
   </component>
@@ -247,7 +261,11 @@
       <workItem from="1611654445380" duration="14115000" />
       <workItem from="1611734860548" duration="5601000" />
       <workItem from="1611904954172" duration="25544000" />
-      <workItem from="1611998174235" duration="2149000" />
+      <workItem from="1611998174235" duration="12838000" />
+      <workItem from="1612013282824" duration="705000" />
+      <workItem from="1612018660591" duration="352000" />
+      <workItem from="1612019290373" duration="308000" />
+      <workItem from="1612086117590" duration="5920000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -368,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611938087825</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Home Products Anasayfa da Ürünlerin Gösterilmesi">
+      <created>1612000470295</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1612000470295</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +430,8 @@
     <MESSAGE value="I created contact message and edited admin panel" />
     <MESSAGE value="Menu Contents Listelendi" />
     <MESSAGE value="Created Laravel Search Products with Jetstream livewire Autocomplete and  Laravel Reviews with Jetstream Livewire and Manage at User and Admin Panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Laravel Search Products with Jetstream livewire Autocomplete and  Laravel Reviews with Jetstream Livewire and Manage at User and Admin Panel" />
+    <MESSAGE value="Home Products Anasayfa da Ürünlerin Gösterilmesi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home Products Anasayfa da Ürünlerin Gösterilmesi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
@@ -424,10 +450,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610202069721" />
-    <state x="468" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610880099151">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="467" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612089553584">
+      <screen x="0" y="0" width="1472" height="864" />
     </state>
-    <state x="467" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1472.864@0.0.1472.864" timestamp="1610624082138" />
+    <state x="467" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1472.864@0.0.1472.864" timestamp="1612089553584" />
     <state x="468" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610880099151" />
     <state x="141" y="68" key="DiffContextDialog" timestamp="1611911141405">
       <screen x="0" y="0" width="1472" height="864" />
@@ -479,10 +505,10 @@
     </state>
     <state x="519" y="152" key="RollbackChangesDialog/0.0.1472.864@0.0.1472.864" timestamp="1611911171278" />
     <state x="520" y="152" key="RollbackChangesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610208204623" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1611938097609">
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1612000476885">
       <screen x="0" y="0" width="1472" height="864" />
     </state>
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1472.864@0.0.1472.864" timestamp="1611938097609" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1472.864@0.0.1472.864" timestamp="1612000476885" />
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1611675800256" />
     <state x="631" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611926178963">
       <screen x="0" y="0" width="1472" height="864" />

@@ -25,7 +25,7 @@ Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/home',[HomeController::class, 'index'])->name('homepage');
 Route::get('/aboutus',[HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/references',[HomeController::class, 'references'])->name('references');
-Route::get('/fag',[HomeController::class, 'fag'])->name('fag');
+Route::get('/faq',[HomeController::class, 'faq'])->name('faq');
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage',[HomeController::class, 'sendmessage'])->name('sendmessage');
 Route::get('/menucontents/{id}',[HomeController::class, 'menucontents'])->name('menucontents');
@@ -64,8 +64,20 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('show', [\App\Http\Controllers\Admin\ContentController::class, 'show'])->name('admin_content_show');
     });
 
+    #Faq
+    Route::prefix('faq')->group(function () {
+
+        Route::get('/', [\App\Http\Controllers\Admin\FaqController::class, 'index'])->name('admin_faq');
+        Route::post('store', [\App\Http\Controllers\Admin\FaqController::class, 'store'])->name('admin_faq_store');
+        Route::get('create', [\App\Http\Controllers\Admin\FaqController::class, 'create'])->name('admin_faq_add');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\FaqController::class, 'update'])->name('admin_faq_update');
+        Route::get('edit/{id}', [\App\Http\Controllers\Admin\FaqController::class, 'edit'])->name('admin_faq_edit');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\FaqController::class, 'destroy'])->name('admin_faq_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\FaqController::class, 'show'])->name('admin_faq_show');
+    });
+
+
     #message
-    #Contents
     Route::prefix('message')->group(function () {
 
         Route::get('/', [\App\Http\Controllers\Admin\MessageController::class, 'index'])->name('admin_message');
