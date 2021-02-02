@@ -74,6 +74,7 @@ class HomeController extends Controller
         return view('home.menu_contents',['data'=>$data,'datalist'=>$datalist]);
     }
 
+
     public function aboutus(){
         $setting=Setting::first();
         return view('home.aboutus',['setting'=>$setting]);
@@ -96,6 +97,7 @@ class HomeController extends Controller
         $setting=Setting::first();
         return view('home.contact',['setting'=>$setting]);
     }
+
 
     public function sendmessage(Request $request){
 

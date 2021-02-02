@@ -44,7 +44,7 @@
                                                 <span class="ion-money">₺</span>
                                             </div>
                                             <div class="card-title-c align-self-center">
-                                                <h5 class="title-c">{{$data->price}}</h5>
+                                                <h5 class="title-c">Öde:<a href="{{route('user_payment_add')}}"> {{$data->price}}</a></h5>
                                             </div>
                                         </div>
                                     </div>

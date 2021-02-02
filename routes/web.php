@@ -57,12 +57,13 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
     Route::get('/', [\App\Http\Controllers\Admin\ContentController::class, 'index'])->name('admin_content');
     Route::post('store', [\App\Http\Controllers\Admin\ContentController::class, 'store'])->name('admin_content_store');
-    Route::get('create', [\App\Http\Controllers\Admin\ContentController::class, 'create'])->name('admin_content_add');
+    Route::post('create', [\App\Http\Controllers\Admin\ContentController::class, 'create'])->name('admin_content_add');
     Route::post('update/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'update'])->name('admin_content_update');
     Route::get('edit/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'edit'])->name('admin_content_edit');
     Route::get('delete/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'destroy'])->name('admin_content_delete');
     Route::get('show', [\App\Http\Controllers\Admin\ContentController::class, 'show'])->name('admin_content_show');
     });
+
 
     #Faq
     Route::prefix('faq')->group(function () {
@@ -117,6 +118,17 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
     Route::get('/', [UserController::class, 'index'])->name('profile');
     Route::get('/myreviews', [UserController::class, 'myreviews'])->name('myreviews');
     Route::get('destroymyreview/{id}', [UserController::class, 'destroymyreview'])->name('user_review_delete');
+
+    Route::prefix('payment')->group(function () {
+
+        Route::get('/', [\App\Http\Controllers\PaymentController::class, 'index'])->name('user_payment');
+        Route::post('store', [\App\Http\Controllers\PaymentController::class, 'store'])->name('user_payment_store');
+        Route::get('create', [\App\Http\Controllers\PaymentController::class, 'create'])->name('user_payment_add');
+        Route::post('update/{id}', [\App\Http\Controllers\PaymentController::class, 'update'])->name('user_payment_update');
+        Route::get('edit/{id}', [\App\Http\Controllers\PaymentController::class, 'edit'])->name('user_payment_edit');
+        Route::get('delete/{id}', [\App\Http\Controllers\PaymentController::class, 'destroy'])->name('user_payment_delete');
+        Route::get('show', [\App\Http\Controllers\PaymentController::class, 'show'])->name('user_payment_show');
+    });
 
 });
 /*

@@ -19,25 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Home Products Anasayfa da Ürünlerin Gösterilmesi">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/FaqController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Tutorial/Counter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Faq.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_094805_create_faqs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_095153_faq.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/faq.blade.php" afterDir="false" />
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Laravel Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular yapıldı">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_120210_create_payments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_122952_payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_payment.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_payment_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/menutree.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/menutree.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/references.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/references.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/content_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/content_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,7 +258,11 @@
       <workItem from="1612013282824" duration="705000" />
       <workItem from="1612018660591" duration="352000" />
       <workItem from="1612019290373" duration="308000" />
-      <workItem from="1612086117590" duration="5920000" />
+      <workItem from="1612086117590" duration="9852000" />
+      <workItem from="1612195993403" duration="1484000" />
+      <workItem from="1612201767166" duration="618000" />
+      <workItem from="1612247281022" duration="6071000" />
+      <workItem from="1612264991557" duration="6179000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -393,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612000470295</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Laravel Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular yapıldı">
+      <created>1612092282955</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1612092282955</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +435,8 @@
     <MESSAGE value="Menu Contents Listelendi" />
     <MESSAGE value="Created Laravel Search Products with Jetstream livewire Autocomplete and  Laravel Reviews with Jetstream Livewire and Manage at User and Admin Panel" />
     <MESSAGE value="Home Products Anasayfa da Ürünlerin Gösterilmesi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home Products Anasayfa da Ürünlerin Gösterilmesi" />
+    <MESSAGE value="Laravel Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular yapıldı" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular yapıldı" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
@@ -450,10 +455,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610202069721" />
-    <state x="467" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612089553584">
+    <state x="467" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612266362771">
       <screen x="0" y="0" width="1472" height="864" />
     </state>
-    <state x="467" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1472.864@0.0.1472.864" timestamp="1612089553584" />
+    <state x="467" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1472.864@0.0.1472.864" timestamp="1612266362771" />
     <state x="468" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610880099151" />
     <state x="141" y="68" key="DiffContextDialog" timestamp="1611911141405">
       <screen x="0" y="0" width="1472" height="864" />
@@ -505,19 +510,20 @@
     </state>
     <state x="519" y="152" key="RollbackChangesDialog/0.0.1472.864@0.0.1472.864" timestamp="1611911171278" />
     <state x="520" y="152" key="RollbackChangesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610208204623" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1612000476885">
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1612093969631">
       <screen x="0" y="0" width="1472" height="864" />
     </state>
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1472.864@0.0.1472.864" timestamp="1612000476885" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1472.864@0.0.1472.864" timestamp="1612093969631" />
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1611675800256" />
     <state x="631" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611926178963">
       <screen x="0" y="0" width="1472" height="864" />
     </state>
     <state x="631" y="319" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1472.864@0.0.1472.864" timestamp="1611926178963" />
     <state x="632" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1474.864@0.0.1474.864" timestamp="1610213262442" />
-    <state x="581" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610210691247">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="580" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1612270992913">
+      <screen x="0" y="0" width="1472" height="864" />
     </state>
+    <state x="580" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1472.864@0.0.1472.864" timestamp="1612270992913" />
     <state x="581" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1474.864@0.0.1474.864" timestamp="1610210691247" />
     <state x="555" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610213784356">
       <screen x="0" y="0" width="1474" height="864" />

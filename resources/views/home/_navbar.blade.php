@@ -71,6 +71,7 @@
                             <ul class="custom-menu">
                                 <li><a href="{{route('profile')}}"><i class="fa fa-user-o"></i> My Account </a> </li>
                                 <li><a href="{{route('myreviews')}}"><i class="fa fa-user-o"></i> Reviews </a> </li>
+                                <li><a href="{{route('user_payment')}}"><i class="fa fa-user-o"></i> Payments </a> </li>
                                 <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i> Logout </a> </li>
                             </ul>
                         </ul>
