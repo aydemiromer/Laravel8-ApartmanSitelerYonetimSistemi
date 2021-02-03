@@ -105,6 +105,18 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::get('show/{id}', [\App\Http\Controllers\Admin\ReviewController::class, 'show'])->name('admin_review_show');
     });
 
+    Route::prefix('payment')->group(function () {
+
+        Route::get('/', [\App\Http\Controllers\Admin\PaymentController::class, 'index'])->name('admin_payment');
+        Route::get('list/{status}', [\App\Http\Controllers\Admin\PaymentController::class, 'list'])->name('admin_payment_list');
+        Route::post('store', [\App\Http\Controllers\Admin\PaymentController::class, 'store'])->name('admin_payment_store');
+        Route::post('create', [\App\Http\Controllers\Admin\PaymentController::class, 'create'])->name('admin_payment_add');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'update'])->name('admin_payment_update');
+        Route::get('edit/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'edit'])->name('admin_payment_edit');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'destroy'])->name('admin_payment_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\PaymentController::class, 'show'])->name('admin_payment_show');
+    });
+
 
     #Settings Routes
     Route::get('setting', [\App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin_setting');

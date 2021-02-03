@@ -92,7 +92,7 @@ MAIN CONTENT
     </div>
 </div>
 
-<!-- js placed at the end of the document so the pages load faster -->
+{{--<!-- js placed at the end of the document so the pages load faster -->
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 
@@ -101,8 +101,17 @@ MAIN CONTENT
 <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
 <script>
     $.backstretch("assets/img/login-bg.jpg", {speed: 500});
-</script>
+</script>--}}
+@section('footer')
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').dataTable();
+        });
+    </script>
 
+    <script src="{{asset('assets')}}/table/assets/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="{{asset('assets')}}/table/assets/plugins/dataTables/dataTables.bootstrap.js"></script>
+@endsection
 
 </body>
 </html>

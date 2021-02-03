@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Payment extends Model
 {
     use HasFactory;
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+    public function content(){
+        return $this->belongsTo(Content::class);
+    }
 }

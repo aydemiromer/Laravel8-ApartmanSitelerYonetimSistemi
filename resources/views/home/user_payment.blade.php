@@ -22,7 +22,7 @@
                                     <th rowspan="1" colspan="1">Price</th>
                                     <th rowspan="1" colspan="1">Date</th>
                                     <th rowspan="1" colspan="1">Status</th>
-                                    <th rowspan="1" colspan="1">Edit</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -31,7 +31,6 @@
 
                                     <tr class="gradeU odd">
                                         <td class="">{{$rs -> id}}</td>
-
                                         <td class="sorting_1">{{$rs -> month}}</td>
                                         <td class="sorting_1">{{$rs -> year}}</td>
 
@@ -41,9 +40,9 @@
 
                                         <td class="sorting_1">{{$rs -> created_at}}</td>
                                         <td class=" ">{{$rs -> status}}</td>
-                                        <td class="center "><a href="{{route('admin_content_edit', ['id' => $rs->id])}}">
+                                       {{-- <td class="center "><a href="{{route('admin_content_edit', ['id' => $rs->id])}}">
                                                 <img src="{{asset('assets')}}/admin/assets/images/edit.png" height="30"></a></td>
-
+--}}
                                     </tr>
                                 @endforeach
                                 </tbody>

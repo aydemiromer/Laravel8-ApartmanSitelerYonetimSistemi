@@ -36,7 +36,7 @@
 
                                 <tr class="gradeU odd">
                                     <td class="">{{$rs -> id}}</td>
-                                    <td class="">{{$rs -> user->name}}</td>
+                                    <td class="">{{$rs ->user->name}}</td>
                                     <td>
                                         <a href="{{route('content',['id'=> $rs->content->id])}}" target="_blank">{{$rs->content->title}}</a>
                                     </td>

@@ -35,14 +35,12 @@
                                     <i class="fa fa-angle-right"></i> <a href="{{'aboutus'}}">About Us</a>
                                 </li>
                                 <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">References</a>
+                                    <i class="fa fa-angle-right"></i> <a href="{{'references'}}">References</a>
                                 </li>
                                 <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Contact</a>
+                                    <i class="fa fa-angle-right"></i> <a href="{{'contact'}}">Contact</a>
                                 </li>
-                                <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Fag</a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -58,10 +56,10 @@
                         <div class="w-body-a">
                             <ul class="list-unstyled">
                                 <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Yeni Üyelik</a>
+                                    <i class="fa fa-angle-right"></i> <a href="/register">Yeni Üyelik</a>
                                 </li>
                                 <li class="item-list-a">
-                                    <i class="fa fa-angle-right"></i> <a href="#">Sıkça Sorulan Sorular</a>
+                                    <i class="fa fa-angle-right"></i> <a href="{{'faq'}}">Sıkça Sorulan Sorular</a>
                                 </li>
                             </ul>
                         </div>
