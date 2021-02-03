@@ -33,7 +33,7 @@ MAIN CONTENT
 
 <div id="login-page">
     <div class="container">
-
+        @include('home.message')
         <form class="form-login" action="{{ route('admin_logincheck') }}" method="post">
             @csrf
             <h2 class="form-login-heading">sign in now</h2>

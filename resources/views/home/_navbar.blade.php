@@ -72,15 +72,21 @@
                                 <li><a href="{{route('profile')}}"><i class="fa fa-user-o"></i> My Account </a> </li>
                                 <li><a href="{{route('myreviews')}}"><i class="fa fa-user-o"></i> Reviews </a> </li>
                                 <li><a href="{{route('user_payment')}}"><i class="fa fa-user-o"></i> Payments </a> </li>
-                                <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i> Logout </a> </li>
+                                @php
+                                    $userRoles = Auth::user()->roles->pluck('name');
+                                @endphp
+                                @if($userRoles->contains('admin'))
+                                    <li><a href="{{route('admin_home')}}" ><i class="fa fa-user-o">Admin Panel</i></a></li>
+                                @endif
+                                <li><a href="{{route('logout')}}"><i class="fa fa-sign-out"></i> Logout </a> </li>
                             </ul>
                         </ul>
                     @endauth
                 </li>
                 <li class="nav-item">
                       @guest
-                        <a href="/login" class="btn btn-success">Login</a>
-                        <a href="/register" class="btn btn-danger">Register</a>
+                        <a href="/login" class="btn btn-success"><i class="fa fa-sign-in"> Login</i></a>
+                        <a href="/register" class="btn btn-danger"> Register</a>
                     @endguest
                 </li>
 

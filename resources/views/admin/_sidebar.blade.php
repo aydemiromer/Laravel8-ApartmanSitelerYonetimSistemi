@@ -18,30 +18,30 @@
             </li>
 
             <li>
-                <a href="{{route('admin_content')}}"><i class="fa fa-table "></i>Contents</a>
+                <a href="{{route('admin_content')}}"><i class="fa fa-bars "></i>Contents</a>
             </li>
             <li>
-                <a href="{{route('admin_message')}}"><i class="fa fa-comment "></i>Contact Message </a>
+                <a href="{{route('admin_message')}}"><i class="fa fa-comments "></i>Contact Message </a>
             </li>
             <li>
                 <a href="{{route('admin_review')}}"><i class="fa fa-comment "></i>Review </a>
             </li>
             <li>
-                <a href="{{route('admin_faq')}}"><i class="fa fa-comment "></i>Faq </a>
+                <a href="{{route('admin_faq')}}"><i class="fa fa-question "></i>Faq </a>
             </li>
 
 
             <li>
-                <a href="#"><i class="fa fa-sitemap "></i>Payment Control<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-credit-card "></i>Payment Control<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="{{route('admin_payment_list',['status'=>'new'])}}"><i class="fa fa-star "></i>New Payments </a>
+                        <a href="{{route('admin_payment_list',['status'=>'new'])}}"><i class="fa fa-money "></i>New Payments </a>
                     </li>
                     <li>
                         <a href="{{route('admin_payment_list',['status'=>'paid'])}}"><i class="fa fa-star "></i>Paid Payments </a>
                     </li>
                     <li>
-                        <a href="{{route('admin_payment_list',['status'=>'canceled'])}}"><i class="fa fa-star "></i>Cancel Payments </a>
+                        <a href="{{route('admin_payment_list',['status'=>'canceled'])}}"><i class="fa fa-ban "></i>Cancel Payments </a>
                     </li>
                   {{--  <li>
                         <a href="#">Second Level Link<span class="fa arrow"></span></a>

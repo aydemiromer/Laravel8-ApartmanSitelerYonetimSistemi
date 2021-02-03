@@ -41,87 +41,92 @@ Route::get('/contentlist/{search}',[HomeController::class, 'contentlist'])->name
 
 Route::middleware('auth')->prefix('admin')->group(function () {
 //Admin
-    Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home');
-
-    Route::get('menu', [MenuController::class, 'index'])->name('admin_menu');
-    Route::get('menu/add', [MenuController::class, 'add'])->name('admin_menu_add');
-    Route::post('menu/create', [MenuController::class, 'create'])->name('admin_menu_create');
-    Route::post('menu/update/{id}', [MenuController::class, 'update'])->name('admin_menu_update');
-    Route::get('menu/edit/{id}', [MenuController::class, 'edit'])->name('admin_menu_edit');
-    Route::get('menu/delete/{id}', [MenuController::class, 'destroy'])->name('admin_menu_delete');
-    Route::get('menu/show', [MenuController::class, 'show'])->name('admin_menu_show');
+    Route::middleware('admin')->group(function (){
 
 
-    #Contents
-    Route::prefix('content')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home');
 
-    Route::get('/', [\App\Http\Controllers\Admin\ContentController::class, 'index'])->name('admin_content');
-    Route::post('store', [\App\Http\Controllers\Admin\ContentController::class, 'store'])->name('admin_content_store');
-    Route::post('create', [\App\Http\Controllers\Admin\ContentController::class, 'create'])->name('admin_content_add');
-    Route::post('update/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'update'])->name('admin_content_update');
-    Route::get('edit/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'edit'])->name('admin_content_edit');
-    Route::get('delete/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'destroy'])->name('admin_content_delete');
-    Route::get('show', [\App\Http\Controllers\Admin\ContentController::class, 'show'])->name('admin_content_show');
+        Route::get('menu', [MenuController::class, 'index'])->name('admin_menu');
+        Route::get('menu/add', [MenuController::class, 'add'])->name('admin_menu_add');
+        Route::post('menu/create', [MenuController::class, 'create'])->name('admin_menu_create');
+        Route::post('menu/update/{id}', [MenuController::class, 'update'])->name('admin_menu_update');
+        Route::get('menu/edit/{id}', [MenuController::class, 'edit'])->name('admin_menu_edit');
+        Route::get('menu/delete/{id}', [MenuController::class, 'destroy'])->name('admin_menu_delete');
+        Route::get('menu/show', [MenuController::class, 'show'])->name('admin_menu_show');
+
+
+        #Contents
+        Route::prefix('content')->group(function () {
+
+            Route::get('/', [\App\Http\Controllers\Admin\ContentController::class, 'index'])->name('admin_content');
+            Route::post('store', [\App\Http\Controllers\Admin\ContentController::class, 'store'])->name('admin_content_store');
+            Route::post('create', [\App\Http\Controllers\Admin\ContentController::class, 'create'])->name('admin_content_add');
+            Route::post('update/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'update'])->name('admin_content_update');
+            Route::get('edit/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'edit'])->name('admin_content_edit');
+            Route::get('delete/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'destroy'])->name('admin_content_delete');
+            Route::get('show', [\App\Http\Controllers\Admin\ContentController::class, 'show'])->name('admin_content_show');
+        });
+
+
+        #Faq
+        Route::prefix('faq')->group(function () {
+
+            Route::get('/', [\App\Http\Controllers\Admin\FaqController::class, 'index'])->name('admin_faq');
+            Route::post('store', [\App\Http\Controllers\Admin\FaqController::class, 'store'])->name('admin_faq_store');
+            Route::get('create', [\App\Http\Controllers\Admin\FaqController::class, 'create'])->name('admin_faq_add');
+            Route::post('update/{id}', [\App\Http\Controllers\Admin\FaqController::class, 'update'])->name('admin_faq_update');
+            Route::get('edit/{id}', [\App\Http\Controllers\Admin\FaqController::class, 'edit'])->name('admin_faq_edit');
+            Route::get('delete/{id}', [\App\Http\Controllers\Admin\FaqController::class, 'destroy'])->name('admin_faq_delete');
+            Route::get('show', [\App\Http\Controllers\Admin\FaqController::class, 'show'])->name('admin_faq_show');
+        });
+
+
+        #message
+        Route::prefix('message')->group(function () {
+
+            Route::get('/', [\App\Http\Controllers\Admin\MessageController::class, 'index'])->name('admin_message');
+            Route::post('update/{id}', [\App\Http\Controllers\Admin\MessageController::class, 'update'])->name('admin_message_update');
+            Route::get('edit/{id}', [\App\Http\Controllers\Admin\MessageController::class, 'edit'])->name('admin_message_edit');
+            Route::get('delete/{id}', [\App\Http\Controllers\Admin\MessageController::class, 'destroy'])->name('admin_message_delete');
+            Route::get('show', [\App\Http\Controllers\Admin\MessageController::class, 'show'])->name('admin_message_show');
+        });
+
+        #Image
+        Route::prefix('image')->group(function () {
+
+
+            Route::post('store/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('admin_image_store');
+            Route::get('create/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('admin_image_add');
+            Route::get('delete/{id}/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('admin_image_delete');
+            Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
+        });
+        #Review
+        Route::prefix('review')->group(function () {
+            Route::get('/', [\App\Http\Controllers\Admin\ReviewController::class, 'index'])->name('admin_review');
+            Route::post('update/{id}', [\App\Http\Controllers\Admin\ReviewController::class, 'update'])->name('admin_review_update');
+            Route::get('delete/{id}', [\App\Http\Controllers\Admin\ReviewController::class, 'destroy'])->name('admin_review_delete');
+            Route::get('show/{id}', [\App\Http\Controllers\Admin\ReviewController::class, 'show'])->name('admin_review_show');
+        });
+
+        Route::prefix('payment')->group(function () {
+
+            Route::get('/', [\App\Http\Controllers\Admin\PaymentController::class, 'index'])->name('admin_payment');
+            Route::get('list/{status}', [\App\Http\Controllers\Admin\PaymentController::class, 'list'])->name('admin_payment_list');
+            Route::post('store', [\App\Http\Controllers\Admin\PaymentController::class, 'store'])->name('admin_payment_store');
+            Route::post('create', [\App\Http\Controllers\Admin\PaymentController::class, 'create'])->name('admin_payment_add');
+            Route::post('update/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'update'])->name('admin_payment_update');
+            Route::get('edit/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'edit'])->name('admin_payment_edit');
+            Route::get('delete/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'destroy'])->name('admin_payment_delete');
+            Route::get('show', [\App\Http\Controllers\Admin\PaymentController::class, 'show'])->name('admin_payment_show');
+        });
+
+
+        #Settings Routes
+        Route::get('setting', [\App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin_setting');
+        Route::post('setting/update', [\App\Http\Controllers\Admin\SettingController::class, 'update'])->name('admin_setting_update');
+
+
     });
-
-
-    #Faq
-    Route::prefix('faq')->group(function () {
-
-        Route::get('/', [\App\Http\Controllers\Admin\FaqController::class, 'index'])->name('admin_faq');
-        Route::post('store', [\App\Http\Controllers\Admin\FaqController::class, 'store'])->name('admin_faq_store');
-        Route::get('create', [\App\Http\Controllers\Admin\FaqController::class, 'create'])->name('admin_faq_add');
-        Route::post('update/{id}', [\App\Http\Controllers\Admin\FaqController::class, 'update'])->name('admin_faq_update');
-        Route::get('edit/{id}', [\App\Http\Controllers\Admin\FaqController::class, 'edit'])->name('admin_faq_edit');
-        Route::get('delete/{id}', [\App\Http\Controllers\Admin\FaqController::class, 'destroy'])->name('admin_faq_delete');
-        Route::get('show', [\App\Http\Controllers\Admin\FaqController::class, 'show'])->name('admin_faq_show');
-    });
-
-
-    #message
-    Route::prefix('message')->group(function () {
-
-        Route::get('/', [\App\Http\Controllers\Admin\MessageController::class, 'index'])->name('admin_message');
-        Route::post('update/{id}', [\App\Http\Controllers\Admin\MessageController::class, 'update'])->name('admin_message_update');
-        Route::get('edit/{id}', [\App\Http\Controllers\Admin\MessageController::class, 'edit'])->name('admin_message_edit');
-        Route::get('delete/{id}', [\App\Http\Controllers\Admin\MessageController::class, 'destroy'])->name('admin_message_delete');
-        Route::get('show', [\App\Http\Controllers\Admin\MessageController::class, 'show'])->name('admin_message_show');
-    });
-
-    #Image
-    Route::prefix('image')->group(function () {
-
-
-        Route::post('store/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('admin_image_store');
-        Route::get('create/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('admin_image_add');
-        Route::get('delete/{id}/{content_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('admin_image_delete');
-        Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
-    });
-    #Review
-    Route::prefix('review')->group(function () {
-        Route::get('/', [\App\Http\Controllers\Admin\ReviewController::class, 'index'])->name('admin_review');
-        Route::post('update/{id}', [\App\Http\Controllers\Admin\ReviewController::class, 'update'])->name('admin_review_update');
-        Route::get('delete/{id}', [\App\Http\Controllers\Admin\ReviewController::class, 'destroy'])->name('admin_review_delete');
-        Route::get('show/{id}', [\App\Http\Controllers\Admin\ReviewController::class, 'show'])->name('admin_review_show');
-    });
-
-    Route::prefix('payment')->group(function () {
-
-        Route::get('/', [\App\Http\Controllers\Admin\PaymentController::class, 'index'])->name('admin_payment');
-        Route::get('list/{status}', [\App\Http\Controllers\Admin\PaymentController::class, 'list'])->name('admin_payment_list');
-        Route::post('store', [\App\Http\Controllers\Admin\PaymentController::class, 'store'])->name('admin_payment_store');
-        Route::post('create', [\App\Http\Controllers\Admin\PaymentController::class, 'create'])->name('admin_payment_add');
-        Route::post('update/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'update'])->name('admin_payment_update');
-        Route::get('edit/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'edit'])->name('admin_payment_edit');
-        Route::get('delete/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'destroy'])->name('admin_payment_delete');
-        Route::get('show', [\App\Http\Controllers\Admin\PaymentController::class, 'show'])->name('admin_payment_show');
-    });
-
-
-    #Settings Routes
-    Route::get('setting', [\App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin_setting');
-    Route::post('setting/update', [\App\Http\Controllers\Admin\SettingController::class, 'update'])->name('admin_setting_update');
-
 });
 
 

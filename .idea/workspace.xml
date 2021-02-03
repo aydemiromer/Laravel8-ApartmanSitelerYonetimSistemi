@@ -19,21 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Kullanıcı aidat ödeme sistemi yapıldı.">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PaymentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/img/unnamed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/payment.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/payment_edit.blade.php" afterDir="false" />
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Admin aidat ödeme sistemive status çalışmaları yapıldı">
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_140539_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_140821_role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_141040_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_141228_role_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Payment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_payment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -267,7 +267,9 @@
       <workItem from="1612247281022" duration="6071000" />
       <workItem from="1612264991557" duration="6480000" />
       <workItem from="1612276890719" duration="8529000" />
-      <workItem from="1612339369959" duration="9089000" />
+      <workItem from="1612339369959" duration="10781000" />
+      <workItem from="1612357353904" duration="344000" />
+      <workItem from="1612360669584" duration="2568000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -409,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612271476366</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Admin aidat ödeme sistemive status çalışmaları yapıldı">
+      <created>1612353869537</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1612353869537</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +458,8 @@
     <MESSAGE value="Home Products Anasayfa da Ürünlerin Gösterilmesi" />
     <MESSAGE value="Laravel Frequently Asked Question Accordion Menu Sıkça Sorulan Sorular yapıldı" />
     <MESSAGE value="Kullanıcı aidat ödeme sistemi yapıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="Kullanıcı aidat ödeme sistemi yapıldı." />
+    <MESSAGE value="Admin aidat ödeme sistemive status çalışmaları yapıldı" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin aidat ödeme sistemive status çalışmaları yapıldı" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
@@ -523,10 +533,10 @@
     </state>
     <state x="519" y="152" key="RollbackChangesDialog/0.0.1472.864@0.0.1472.864" timestamp="1611911171278" />
     <state x="520" y="152" key="RollbackChangesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610208204623" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1612271484435">
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1612353888127">
       <screen x="0" y="0" width="1472" height="864" />
     </state>
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1472.864@0.0.1472.864" timestamp="1612271484435" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1472.864@0.0.1472.864" timestamp="1612353888127" />
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1611675800256" />
     <state x="631" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611926178963">
       <screen x="0" y="0" width="1472" height="864" />
