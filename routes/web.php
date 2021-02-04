@@ -155,6 +155,7 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
 
         Route::get('/', [\App\Http\Controllers\PaymentController::class, 'index'])->name('user_payment');
         Route::post('store', [\App\Http\Controllers\PaymentController::class, 'store'])->name('user_payment_store');
+        Route::post('edit_store', [\App\Http\Controllers\PaymentController::class, 'edit_store'])->name('user_payment_edit_store');
         Route::get('create', [\App\Http\Controllers\PaymentController::class, 'create'])->name('user_payment_add');
         Route::post('update/{id}', [\App\Http\Controllers\PaymentController::class, 'update'])->name('user_payment_update');
         Route::get('edit/{id}', [\App\Http\Controllers\PaymentController::class, 'edit'])->name('user_payment_edit');

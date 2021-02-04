@@ -20,8 +20,11 @@
                                     <th rowspan="1" colspan="1">Location</th>
                                     <th rowspan="1" colspan="1">FlatNumber</th>
                                     <th rowspan="1" colspan="1">Price</th>
+                                    <th rowspan="1" colspan="1">Note</th>
+
                                     <th rowspan="1" colspan="1">Date</th>
                                     <th rowspan="1" colspan="1">Status</th>
+                                    <th rowspan="1" colspan="1">Edit</th>
 
                                     </tr>
                                 </thead>
@@ -37,12 +40,13 @@
                                         <td class=" ">{{$rs -> location}}</td>
                                         <td class=" ">{{$rs -> flatnumber}}</td>
                                         <td class=" ">{{$rs -> payment}}</td>
+                                        <td class="sorting_1">{{$rs -> adminnote}}</td>
 
                                         <td class="sorting_1">{{$rs -> created_at}}</td>
                                         <td class=" ">{{$rs -> status}}</td>
-                                       {{-- <td class="center "><a href="{{route('admin_content_edit', ['id' => $rs->id])}}">
+                                        <td class="center "><a href="{{route('user_payment_edit', ['id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')">
                                                 <img src="{{asset('assets')}}/admin/assets/images/edit.png" height="30"></a></td>
---}}
+
                                     </tr>
                                 @endforeach
                                 </tbody>

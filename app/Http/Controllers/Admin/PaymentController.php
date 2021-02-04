@@ -74,7 +74,6 @@ class PaymentController extends Controller
     public function edit(Payment $payment,$id)
     {
         $data = Payment::find($id);
-
         $data->save();
         return view('admin.payment_edit',['data'=>$data]);
     }

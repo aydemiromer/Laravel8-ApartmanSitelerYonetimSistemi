@@ -53,8 +53,29 @@ class PaymentController extends Controller
 
 
         $data->save();
-        return redirect() -> route('user_payment')->with('success','Mesajınız başarılı bir şekilde iletilmiştir!');;
+        return redirect() -> route('user_payment')->with('success','Mesajınız başarılı bir şekilde iletilmiştir!');
     }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function edit_store(Request $request,$id)
+    {
+        $data = Payment::find($id);
+
+        $data->year =$request->input('year');
+        $data->month = $request->input('month');
+        $data->location = $request->input('location');
+        $data->flatnumber = $request->input('flatnumber');
+        $data->adminnote = $request->input('adminnote');
+
+        $data->save();
+        return redirect() -> route('user_payment')->with('success','Mesajınız başarılı bir şekilde iletilmiştir!');
+    }
+
 
     /**
      * Display the specified resource.
@@ -73,9 +94,11 @@ class PaymentController extends Controller
      * @param  \App\Models\Payment  $payment
      * @return \Illuminate\Http\Response
      */
-    public function edit(Payment $payment)
+    public function edit(Payment $payment,$id)
     {
-        //
+        $data = Payment::find($id);
+        $data->save();
+        return view('home.user_payment_edit',['data'=>$data]);
     }
 
     /**
@@ -85,9 +108,18 @@ class PaymentController extends Controller
      * @param  \App\Models\Payment  $payment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Payment $payment)
+    public function update(Request $request, Payment $payment,$id)
     {
-        //
+        $data = Payment::find($id);
+        $data->year =$request->input('year');
+        $data->month = $request->input('month');
+        $data->location = $request->input('location');
+        $data->flatnumber = $request->input('flatnumber');
+        $data->adminnote = $request->input('adminnote');
+        $data->status =$request->input('status');
+        $data->save();
+        return redirect()->back()->with('success','Payment Updated');
+
     }
 
     /**

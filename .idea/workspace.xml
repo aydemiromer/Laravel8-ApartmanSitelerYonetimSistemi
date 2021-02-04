@@ -19,16 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="User Admin Role Permission Yetkilendirmeler yapıldı">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_roles.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_show.blade.php" afterDir="false" />
+    <list default="true" id="3f19216b-44d5-4079-8fe4-aa57bc52253d" name="Default Changelist" comment="Admin Panel User Role management oluşturuldu">
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_payment_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/payment_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/payment_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_payment.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,7 +262,7 @@
       <workItem from="1612339369959" duration="10781000" />
       <workItem from="1612357353904" duration="344000" />
       <workItem from="1612360669584" duration="2813000" />
-      <workItem from="1612427122228" duration="9223000" />
+      <workItem from="1612427122228" duration="14261000" />
     </task>
     <task id="LOCAL-00001" summary="İndex.blade and home.blade changed and add other pieces.">
       <created>1608394469228</created>
@@ -421,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612363411626</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Admin Panel User Role management oluşturuldu">
+      <created>1612438323611</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1612438323611</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +467,8 @@
     <MESSAGE value="Kullanıcı aidat ödeme sistemi yapıldı." />
     <MESSAGE value="Admin aidat ödeme sistemive status çalışmaları yapıldı" />
     <MESSAGE value="User Admin Role Permission Yetkilendirmeler yapıldı" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Admin Role Permission Yetkilendirmeler yapıldı" />
+    <MESSAGE value="Admin Panel User Role management oluşturuldu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Panel User Role management oluşturuldu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="110" key="#Inspections" timestamp="1609500377725">
@@ -527,31 +532,31 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="518" y="155" key="NewPhpClassDialog/0.0.1474.864@0.0.1474.864" timestamp="1609496005000" />
-    <state x="572" y="355" key="NewPhpFileDialog" timestamp="1610627600364">
-      <screen x="0" y="0" width="1472" height="864" />
+    <state x="573" y="355" key="NewPhpFileDialog" timestamp="1612439275595">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="572" y="355" key="NewPhpFileDialog/0.0.1472.864@0.0.1472.864" timestamp="1610627600364" />
-    <state x="573" y="355" key="NewPhpFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1610186487320" />
+    <state x="573" y="355" key="NewPhpFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1612439275595" />
     <state x="519" y="152" key="RollbackChangesDialog" timestamp="1611911171278">
       <screen x="0" y="0" width="1472" height="864" />
     </state>
     <state x="519" y="152" key="RollbackChangesDialog/0.0.1472.864@0.0.1472.864" timestamp="1611911171278" />
     <state x="520" y="152" key="RollbackChangesDialog/0.0.1474.864@0.0.1474.864" timestamp="1610208204623" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1612363426199">
-      <screen x="0" y="0" width="1472" height="864" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1612438329233">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1472.864@0.0.1472.864" timestamp="1612363426199" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1611675800256" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1612438329233" />
     <state x="631" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611926178963">
       <screen x="0" y="0" width="1472" height="864" />
     </state>
     <state x="631" y="319" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1472.864@0.0.1472.864" timestamp="1611926178963" />
     <state x="632" y="319" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1474.864@0.0.1474.864" timestamp="1610213262442" />
-    <state x="581" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1612432813280">
+    <state x="581" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1612442690287">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="580" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1472.864@0.0.1472.864" timestamp="1612270992913" />
-    <state x="581" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1474.864@0.0.1474.864" timestamp="1612432813280" />
+    <state x="581" y="205" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1474.864@0.0.1474.864" timestamp="1612442690287" />
     <state x="555" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610213784356">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

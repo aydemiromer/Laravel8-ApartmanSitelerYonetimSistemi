@@ -8,11 +8,11 @@
                 @endif
 
             </li>
-            <div>
+            <li>
                 @auth
-                    <a href="#" class="success">{{Auth:: user()->name}}</a>
+                    <a href="#" class="success"><i class="fa fa-user "></i>{{Auth:: user()->name}}</a>
                 @endauth
-            </div>
+            </li>
 
 
             <li>
@@ -26,13 +26,13 @@
                 <a href="{{route('admin_message')}}"><i class="fa fa-comments "></i>Contact Message </a>
             </li>
             <li>
-                <a href="{{route('admin_review')}}"><i class="fa fa-comment "></i>Review </a>
+                <a href="{{route('admin_review')}}"><i class="fa fa-comment "></i>Comment </a>
             </li>
             <li>
                 <a href="{{route('admin_faq')}}"><i class="fa fa-question "></i>Faq </a>
             </li>
             <li>
-                <a href="{{route('admin_users')}}"><i class="fa fa-question "></i>Roles </a>
+                <a href="{{route('admin_users')}}"><i class="fa fa-users "></i>Roles </a>
             </li>
 
 
