@@ -3,7 +3,9 @@
     <div class="sidebar-collapse">
         <ul class="nav" id="main-menu">
             <li class="text-center user-image-back">
-                <img src="{{asset('assets')}}/admin/assets/img/unnamed.png" class="img-responsive" />
+                @if(Auth:: user()->profile_photo_path)
+                    <img src="{{Storage::url(Auth:: user()->profile_photo_path)}}" height="260" alt="">
+                @endif
 
             </li>
             <div>
@@ -28,6 +30,9 @@
             </li>
             <li>
                 <a href="{{route('admin_faq')}}"><i class="fa fa-question "></i>Faq </a>
+            </li>
+            <li>
+                <a href="{{route('admin_users')}}"><i class="fa fa-question "></i>Roles </a>
             </li>
 
 
