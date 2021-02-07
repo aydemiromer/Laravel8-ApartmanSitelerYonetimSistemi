@@ -29,7 +29,6 @@ class PaymentController extends Controller
     public function list($status)
     {
         $datalist = Payment::where('status',$status)->get();
-
         return view('admin.payment',['datalist'=>$datalist]);
     }
 

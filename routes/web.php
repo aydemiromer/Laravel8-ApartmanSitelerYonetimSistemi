@@ -60,7 +60,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
             Route::get('/', [\App\Http\Controllers\Admin\ContentController::class, 'index'])->name('admin_content');
             Route::post('store', [\App\Http\Controllers\Admin\ContentController::class, 'store'])->name('admin_content_store');
-            Route::post('create', [\App\Http\Controllers\Admin\ContentController::class, 'create'])->name('admin_content_add');
+            Route::get('create', [\App\Http\Controllers\Admin\ContentController::class, 'create'])->name('admin_content_add');
             Route::post('update/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'update'])->name('admin_content_update');
             Route::get('edit/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'edit'])->name('admin_content_edit');
             Route::get('delete/{id}', [\App\Http\Controllers\Admin\ContentController::class, 'destroy'])->name('admin_content_delete');
@@ -149,6 +149,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function () {
     Route::get('/', [UserController::class, 'index'])->name('profile');
     Route::get('/myreviews', [UserController::class, 'myreviews'])->name('myreviews');
+    Route::get('list/{status}', [UserController::class, 'list'])->name('myreviews_list');
     Route::get('destroymyreview/{id}', [UserController::class, 'destroymyreview'])->name('user_review_delete');
 
     Route::prefix('payment')->group(function () {

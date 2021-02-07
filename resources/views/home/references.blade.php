@@ -4,7 +4,7 @@
 @endphp
 
 
-@section('title','References-', $setting->title)
+@section('title','References-' . $setting->title)
 
 @section('description')
     {{ $setting->description}}
@@ -15,35 +15,34 @@
 
 
 @section('content')
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="breadcrumb">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="{{route('home')}}">Home</a> </li>
+            <br>
+            <li class="active"> --> References </li>
+        </ul>
+    </div>
 
-    <section class="section-about">
+    <section class="property-grid grid">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                </div>
-                <div class="col-md-6 section-t8">
-                    <div class="row">
-                        <div class=" section-md-t8">
-                            <div class="title-box-d">
-                                <h3 class="title">
-                                    <span class="color">References</span>
-                                </h3>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="title-box-d">
-                                {!!$setting->references!!}
-                                    </div>
-                                 </div>
-                            </div>
-
+                <div class="col-md-4">
+                    <div class="card-box-a card-shadow">
+                        <div class="img-box-a">
+                            {!!$setting->references!!}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
 
 

@@ -23,7 +23,7 @@ class HomeController extends Controller
     }
 
     public function index(){
-        $setting=Setting::first();
+        $setting=Setting::select('title','description','keywords')->get();
         $slider = Content::select('id','title','image','price')->limit(4)->get();
         $latest = Content::select('id','title','image','price')->limit(5)->orderByDesc('id')->get();
 
@@ -40,12 +40,10 @@ class HomeController extends Controller
     }
 
     public function content($id){
-
         $data = Content::find($id);
-        $datalist = Image::where('content_id',$id)->get();
+        $images = \App\Models\Image::where('content_id',$id)->limit(6)->get();
         $reviews = \App\Models\Review::where('content_id',$id)->get();
-
-        return view('home.content_detail',['data' => $data,'datalist' => $datalist,'reviews'=>$reviews]);
+        return view('home.content_detail',['data' => $data,'images' => $images,'reviews'=>$reviews]);
     }
 
     public function getcontent(Request $request){
@@ -76,7 +74,7 @@ class HomeController extends Controller
 
 
     public function aboutus(){
-        $setting=Setting::first();
+        $setting=Setting::select('title','description','keywords')->get();
         return view('home.aboutus',['setting'=>$setting]);
     }
 

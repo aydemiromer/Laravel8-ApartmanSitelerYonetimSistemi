@@ -4,7 +4,7 @@
 @endphp
 
 
-@section('title','About Us-', $setting->title)
+@section('title', 'ContactUs-' . $setting->title)
 
 @section('description')
     {{ $setting->description}}

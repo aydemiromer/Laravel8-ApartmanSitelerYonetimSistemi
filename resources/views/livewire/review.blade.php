@@ -29,16 +29,15 @@
                             @error('rate')<span class="text-danger">{{$message}}</span>@enderror
                             <strong class="text-uppercase">Your Rating:</strong>
 
-                            <div class="fa fa-star">
-                                <input type="radio" id="fa fa-star5" wire:model="rate" value="5" /><label for="fa fa-star5"></label>
-                                <input type="radio" id="fa fa-star4" wire:model="rate" value="4" /><label for="fa fa-star4"></label>
-                                <input type="radio" id="fa fa-star3" wire:model="rate" value="3" /><label for="fa fa-star3"></label>
-                                <input type="radio" id="fa fa-star2" wire:model="rate" value="2" /><label for="fa fa-star2"></label>
-                                <input type="radio" id="fa fa-star1" wire:model="rate" value="1" /><label for="fa fa-star1"></label>
-                            </div>
+                            --}}{{--<div class="fa fa-star-o">
+                                <input type="radio" id="fa fa-star-o" wire:model="rate" value="5" /><label for="fa fa-star5"></label>
+                                <input type="radio" id="fa fa-star-o" wire:model="rate" value="4" /><label for="fa fa-star4"></label>
+                                <input type="radio" id="fa fa-star-o" wire:model="rate" value="3" /><label for="fa fa-star3"></label>
+                                <input type="radio" id="fa fa-star-o" wire:model="rate" value="2" /><label for="fa fa-star2"></label>
+                                <input type="radio" id="fa fa-star-o" wire:model="rate" value="1" /><label for="fa fa-star1"></label>
+                            </div>--}}{{--
                         </div>
                     </div>--}}
-
 
                     {{--<div class="col-md-12">
                         <button type="submit" class="btn btn-a">Send Message</button>

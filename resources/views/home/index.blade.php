@@ -3,13 +3,14 @@
     $setting = \App\Http\Controllers\HomeController::getsetting()
 @endphp
 
-@section('title',)
+@section('title',$setting->title)
 
 @section('description')
+    {{$setting->description}}
 
 @endsection
 
-@section('keywords', )
+@section('keywords', $setting->keywords )
 
 @section('content')
     @include('home._slider')
@@ -109,7 +110,7 @@
                 <div class="col-md-12">
                     <div class="title-wrap d-flex justify-content-between">
                         <div class="title-box">
-                            <h2 class="title-a">Latest New</h2>
+                            <h2 class="title-a">Son Eklenenler</h2>
                         </div>
                     </div>
                 </div>

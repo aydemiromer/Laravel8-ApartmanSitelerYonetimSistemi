@@ -19,6 +19,14 @@ class ReviewController extends Controller
         return view('admin.review',['datalist'=>$datalist]);
     }
 
+    public function list($status)
+    {
+        $datalist = \App\Models\Review::where('status',$status)->get();
+        return view('admin.review',['datalist'=>$datalist]);
+    }
+
+
+
     /**
      * Show the form for creating a new resource.
      *
