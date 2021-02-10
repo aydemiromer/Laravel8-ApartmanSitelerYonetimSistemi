@@ -5,31 +5,132 @@
                 <h2>Admin Dashboard</h2>
             </div>
         </div>
+
         <!-- /. ROW  -->
         <hr />
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-6">
-                <h5>Widget Box One</h5>
                 <div class="panel panel-primary text-center no-boder bg-color-blue">
                     <div class="panel-body">
                         <i class="fa fa-bar-chart-o fa-5x"></i>
-                        <h3>120 GB </h3>
+                        <h3>MENU </h3>
                     </div>
-                    <div class="panel-footer back-footer-blue">
-                        Disk Space Available
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_menu')}}"> Click Here</a>
 
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-3 col-xs-6">
-                <h5>Widget Box Two</h5>
                 <div class="alert alert-info text-center">
                     <i class="fa fa-desktop fa-5x"></i>
-                    <h3>100$ </h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <h3>CONTENTS </h3>
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_content')}}"> Click Here</a>
+
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="panel panel-primary text-center no-boder bg-color-blue">
+                    <div class="panel-body">
+                        <i class="fa fa-comments fa-3x"></i>
+                        <h3>CONTACT MESSAGE </h3>
+                    </div>
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_message')}}"> Click Here</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="alert alert-info text-center">
+                    <i class="fa fa-comment fa-5x"></i>
+                    <h3>COMMENTS </h3>
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_review')}}"> Click Here</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="alert alert-info text-center">
+                    <i class="fa fa-question fa-5x"></i>
+                    <h3>FAQ </h3>
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_faq')}}"> Click Here</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="panel panel-primary text-center no-boder bg-color-blue">
+                    <div class="panel-body">
+                        <i class="fa fa-users fa-5x"></i>
+                        <h3>ROLES </h3>
+                    </div>
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_users')}}"> Click Here</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="alert alert-info text-center">
+                    <i class="fa fa-money fa-5x"></i>
+                    <h3>NEW PAYMENTS </h3>
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_payment_list',['status'=>'new'])}}"> Click Here</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="panel panel-primary text-center no-boder bg-color-blue">
+                    <div class="panel-body">
+                        <i class="fa fa-credit-card fa-5x"></i>
+                        <h3>PAID PAYMENTS </h3>
+                    </div>
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_payment_list',['status'=>'paid'])}}"> Click Here</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="panel panel-primary text-center no-boder bg-color-blue">
+                    <div class="panel-body">
+                        <i class="fa fa-ban fa-5x"></i>
+                        <h3>CANCELPAYMENTS </h3>
+                    </div>
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_payment_list',['status'=>'canceled'])}}"> Click Here</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="alert alert-info text-center">
+                    <i class="fa fa-cog fa-5x"></i>
+                    <h3>SETTING </h3>
+                    <div class="panel-footer back-footer-green">
+                        <a href="{{route('admin_setting')}}"> Click Here</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+           {{-- <div class="col-md-6">
                 <h5>Buttons Samples</h5>
                 <a href="#" class="btn btn-default">default</a>
                 <a href="#" class="btn btn-primary">primary</a>
@@ -54,6 +155,7 @@
 
             </div>
 
+
         </div>
         <!-- /. ROW  -->
         <hr />
@@ -74,7 +176,9 @@
             </div>
         </div>
         <hr />
-        
+
 
     </div>
 </div>
+
+--}}

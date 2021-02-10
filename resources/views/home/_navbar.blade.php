@@ -70,7 +70,7 @@
                         <ul class="dropdown-menu" role="menu">
                             <ul class="custom-menu">
                                 <li><a href="{{route('profile')}}"><i class="fa fa-user-o"></i> My Account </a> </li>
-                                <li><a href="{{route('myreviews_list',['status'=>'true'])}}"><i class="fa fa-user-o"></i> Reviews </a> </li>
+                                <li><a href="{{route('myreviews'/*,['status'=>'true']*/)}}"><i class="fa fa-user-o"></i> Reviews </a> </li>
                                 <li><a href="{{route('user_payment')}}"><i class="fa fa-user-o"></i> Payments </a> </li>
                                 @php
                                     $userRoles = Auth::user()->roles->pluck('name');

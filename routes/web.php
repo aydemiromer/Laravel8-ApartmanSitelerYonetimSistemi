@@ -152,6 +152,7 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
     Route::get('list/{status}', [UserController::class, 'list'])->name('myreviews_list');
     Route::get('destroymyreview/{id}', [UserController::class, 'destroymyreview'])->name('user_review_delete');
 
+
     Route::prefix('payment')->group(function () {
 
         Route::get('/', [\App\Http\Controllers\PaymentController::class, 'index'])->name('user_payment');

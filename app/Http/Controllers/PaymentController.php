@@ -21,6 +21,8 @@ class PaymentController extends Controller
         return view('home.user_payment',['datalist'=>$datalist]);
     }
 
+
+
     /**
      * Show the form for creating a new resource.
      *

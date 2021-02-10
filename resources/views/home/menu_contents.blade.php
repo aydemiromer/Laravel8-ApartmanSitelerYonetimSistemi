@@ -1,5 +1,5 @@
 @extends('layouts.home')
-@section('title')
+@section('title', $data->title . '-Contents')
 @section('description')
 @endsection
 @section('keywords')
@@ -27,7 +27,6 @@
                 <div class="col-md-12">
                     <div class="row">
             @foreach($datalist as $rs)
-            <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <div class="single_product_item">
                         <img src="{{Storage::url($rs->image)}}" width="250" height="250" alt="">
@@ -39,7 +38,6 @@
                     </div>
                 </div>
 
-            </div>
             @endforeach
         </div>
             </div>

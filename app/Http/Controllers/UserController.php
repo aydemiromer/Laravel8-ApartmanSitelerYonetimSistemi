@@ -29,11 +29,11 @@ class UserController extends Controller
         return view('home.user_reviews',['datalist'=>$datalist]);
     }
 
-    public function list($status)
+  /*  public function list($status)
     {
         $datalist = \App\Models\Review::where('status',$status)->get();
         return view('home.user_reviews',['datalist'=>$datalist]);
-    }
+    }*/
 
 
     public function destroymyreview(Review $review,$id){
